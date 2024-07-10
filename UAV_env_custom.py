@@ -43,11 +43,15 @@ class UAVEnv(gym.Env):
 
         #important to work with stable baselines below
         self.n_actions = 4
-        self.action_space = gym.spaces.Discrete(self.n_actions)
-        self.observation_space = gym.spaces.Discrete(self.n_actions) #may change later when I think about the visualization
+
+        self.action_space = gym.spaces.box(low=np.array([0, 0, 0]), high=np.array([360, 100, self.users-1]), dtype=np.float32) #each step choose betweeen 0 and 360 degrees, 0 and 100 meters, and 0 and N user. serve N user.
+        self.observation_space = spaces.Box(low=np.array([0.0]), high=np.array([1.0]), dtype=np.float32) #may change later when I think about the visualization
         self.task_list = np.random.randint(2097153, 2621440, self.users)  # Random computing task 2~2.5Mbits -> 80
         
         #will need to think about how to alter below 3 to serve all users at once
+        #idea for serving multiple users remove the user selection part of the action space
+        #and when calculating the latency loop through each user. 
+         #will remove since I'm not using than to define my actions.
         self.action_bound = [-1, 1]  # Corresponds to the tahn activation function
         self.action_dim = 4  # The first digit represents the ue id of the service; the middle two digits represent the flight angle and distance; the last 1 digit represents the uninstall rate currently serving the UE
         self.state_dim = 4 + self.users * 4  # uav battery remain, uav loc, remaining sum task size, all ue loc, all ue task size, all ue block_flag
@@ -79,13 +83,24 @@ class UAVEnv(gym.Env):
 
 
         
-
+        #reset is finished in theory; possible fault point is the modify_state method and not splitting into multiple methods 
+        #as shown in the sample code. 7/10/2024
     def reset(self, seed = None, options = None):
-        self.state = self.modify_state(self.state)
         super().reset(seed=seed, options=options)
+        #default settings for battery and other values
+        self.sum_task_size = 100 * 1048576
+        self.e_battery_uav = 500000
         self.uav_position = np.array([0, 0])
+        self.loc_ue_list = np.random.randint(0, 101, size=[self.users, 2])
+        #where reset step would be
+        self.task_list = np.random.randint(2097153, 2621440, self.users)  # Random computing task 2~2.5Mbits -> 80
+        self.block_flag_list = np.random.randint(0,2,self.users) #determine which uavs are blocked or not in line of sight of the drone randomly.
+        #update state to reflect changes
+        self.state = self.modify_state(self.state)
+
+        #below commands are necessary for stable baselines 3 to work
         info = {}
-        observation = 0
+        observation = self.state = self.modify_state(self.start_state)
         return observation, info
         #return np.array([self.uav_position]).astype(np.float32), {}
 
@@ -143,6 +158,7 @@ class UAVEnv(gym.Env):
         if t_tr < 0 or t_edge_com < 0 or t_local_com < 0:
             raise Exception(print("+++++++++++++++++!! error !!+++++++++++++++++++++++"))
         return max([t_tr + t_edge_com, t_local_com])  #Flight time impact factor
+
 if __name__ == "__main__":
     env = UAVEnv()
     check_env(env)

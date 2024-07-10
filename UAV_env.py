@@ -1,6 +1,5 @@
 import math
 import random
-
 import numpy as np
 
 
@@ -54,7 +53,7 @@ class UAVEnv(object):
         self.start_state = np.append(self.start_state, self.task_list)
         self.start_state = np.append(self.start_state, self.block_flag_list)
         self.state = self.start_state
-        print(self.state)
+        #print(self.state)
 
     def reset_env(self):
         self.sum_task_size = 100 * 1048576  # Total computing task 60 Mbits -> 60 80 100 120 140
@@ -80,6 +79,7 @@ class UAVEnv(object):
         self.state = np.append(self.state, np.ravel(self.loc_ue_list))
         self.state = np.append(self.state, self.task_list)
         self.state = np.append(self.state, self.block_flag_list)
+        #print(self.state)
         return self._get_obs()
 
     def _get_obs(self):
@@ -199,5 +199,5 @@ class UAVEnv(object):
             raise Exception(print("+++++++++++++++++!! error !!+++++++++++++++++++++++"))
         return max([t_tr + t_edge_com, t_local_com])  #Flight time impact factor
     
-if __name__ == "__main__":
-    env = UAVEnv()
+# if __name__ == "__main__":
+#     env = UAVEnv()

@@ -10,7 +10,7 @@ Using:
 tensorflow 1.14.0
 gym 0.15.3
 """
-
+#won't run on macos may be due to version of tensorflow not liking silicon chips
 import tensorflow as tf
 import numpy as np
 from UAV_env import UAVEnv
