@@ -56,10 +56,10 @@ class UAVEnv(gym.Env):
         #initliaze uav battery remaining, uav location, sum of task size, all ue location, all ue task size, all ue block flag
         self.start_state = self.modify_state() # the changes I implemented have changed the output of the state. to not be float 32 7/10/2024
         self.state = self.start_state
-        print(self.state)
+        #print(self.state) debugging delete later
         self.action_space = gym.spaces.Box(low=np.array([0, 0, 0]), high=np.array([360, 100, self.users-1]), dtype=np.float32) #each step choose betweeen 0 and 360 degrees, 0 and 100 meters, and 0 and N user. serve N user.
         
-        self.observation_space = spaces.Box(low=np.zeros(20), high=self.state, dtype=np.float32) #need fixing I need to make this reflect the state space. 
+        self.observation_space = spaces.Box(low=np.zeros(self.state_dim), high=np.inf*np.ones(self.state_dim), dtype=np.int32) #need fixing I need to make this reflect the state space. 
 
     def modify_state(self, state = np.array([])):
             #array looks like
@@ -96,13 +96,15 @@ class UAVEnv(gym.Env):
         self.task_list = np.random.randint(2097153, 2621440, self.users)  # Random computing task 2~2.5Mbits -> 80
         self.block_flag_list = np.random.randint(0,2,self.users) #determine which uavs are blocked or not in line of sight of the drone randomly.
         #update state to reflect changes
-        self.state = self.modify_state(self.state)
-        print(self.state)
+        self.modify_state(self.state)
+        #print(self.state) debugging delete later 
 
         #below commands are necessary for stable baselines 3 to work
         info = {}
-        observation = self.modify_state(self.state)
-        return observation, info
+        self.modify_state(self.state)
+        observation = self.start_state #self.modify_state(self.state)
+        #print(observation) debugging delete later
+        return (observation, info)
         #return np.array([self.uav_position]).astype(np.float32), {}
 
 
@@ -123,7 +125,7 @@ class UAVEnv(gym.Env):
         reward = 1 if self.uav_position[0] == 0 else 0
         terminated = False
         truncated = False
-        observation = 0
+        observation = self.state
         info = {}
         return (observation, reward, terminated, truncated, info)
     
@@ -162,5 +164,7 @@ class UAVEnv(gym.Env):
 
 if __name__ == "__main__":
     env = UAVEnv()
+    obs, _ = env.reset()
+    #print(obs)
     check_env(env)
     
