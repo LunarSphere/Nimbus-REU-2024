@@ -56,7 +56,8 @@ class UAVEnv(gym.Env):
         #initliaze uav battery remaining, uav location, sum of task size, all ue location, all ue task size, all ue block flag
         self.start_state = self.state # the changes I implemented have changed the output of the state. to not be float 32 7/10/2024
         #print(self.state) debugging delete later
-        self.action_space = gym.spaces.Box(low=np.array([0, 0, 0]), high=np.array([360, 100, self.users-1]), dtype=np.float32) #each step choose betweeen 0 and 360 degrees, 0 and 100 meters, and 0 and N user. serve N user.
+        #decided to change action space to normalize values between -1 and 1 and have a tuple with discrete number of users. 
+        self.action_space = spaces.Box(low=-1, high=1, shape=(4,), dtype=np.float32)
         
         self.observation_space = spaces.Dict({
             'battery_remaining': spaces.Box(low=0, high=self.e_battery_uav, shape=(1,), dtype=np.float32),
@@ -128,6 +129,20 @@ class UAVEnv(gym.Env):
         is_terminal = False
         offloading_ratio_change = False
         reset_dist = False
+        # get values from the action
+        angle_action = action[0]
+        flight_distance_action = action[1]
+        climb_angle_action = action[2]
+        user_selection_action = action[3]
+        
+        # Denormalize continuous actions
+        angle = (angle_action + 1) * 180  # Map [-1, 1] to [0, 360]
+        flight_distance = (flight_distance_action + 1) * 49.5  # Map [-1, 1] to [0, 99]
+        climb_angle = climb_angle_action * 45  # Assuming climb angle range is [-45, 45] degrees
+        
+        # Convert user selection action to a discrete integer in the range [0, max_users - 1]
+        user_selection = int((user_selection_action + 1) * (self.users - 1) / 2)
+        
         
 
         #below is necessary for the environment to work with stable baselines 3 but I will need to change it later
