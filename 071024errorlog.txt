@@ -1,0 +1,423 @@
+/Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(15h35m|
+1040 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 161, in <module>
+    if __name__ == "__main__":
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 47, in __init__
+    self.action_space = gym.spaces.box(low=np.array([0, 0, 0]), high=np.array([360, 100, self.users-1]), dtype=np.float32) #each step choose betweeen 0 and 360 degrees, 0 and 100 meters, and 0 and N user. serve N user.
+TypeError: 'module' object is not callable
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(15h39m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                              ⏎ ✹
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 163, in <module>
+    env = UAVEnv()
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 47, in __init__
+    self.action_space = gym.spaces.box(low=np.array([0, 0, 0]), high=np.array([360, 100, self.users-1]), dtype=np.float32) #each step choose betweeen 0 and 360 degrees, 0 and 100 meters, and 0 and N user. serve N user.
+TypeError: 'module' object is not callable
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(0m|git@main)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                                ⏎
+[   500000         0         0 104857600       100        44        32
+        68        48        29       100        56   2118580   2212835
+   2398410   2294384         0         0         0         0]
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 433, in check_env
+    env.reset(seed=0)
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 99, in reset
+    self.state = self.modify_state(self.state)
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 69, in modify_state
+    if state == None:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(1m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                              ⏎ ✹
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 163, in <module>
+    env = UAVEnv()
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 60, in __init__
+    self.start_state = self.modify_state()
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 77, in modify_state
+    state = np.append(self.e_battery_uav, self.loc_uav)
+AttributeError: 'UAVEnv' object has no attribute 'loc_uav'
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(6m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                              ⏎ ✹
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+[   500000         0         0 104857600        39        92        84
+        90        45        39        49        59   2402447   2524067
+   2306687   2392488         1         1         0         0]
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: elementwise comparison failed; this will raise an error in the future.
+  if state == np.array([]):
+/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py:453: UserWarning: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 473, in check_env
+    _check_returned_values(env, observation_space, action_space)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 300, in _check_returned_values
+    _check_obs(obs, observation_space, "reset")
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 214, in _check_obs
+    assert observation_space.shape == obs.shape, (
+AssertionError: The observation returned by the `reset()` method does not match the shape of the given observation space Box(0.0, 1.0, (1,), float32). Expected: (1,), actual shape: (20,)
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(6m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                              ⏎ ✹
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+[   500000         0         0 104857600        67        63       100
+        84        41        70        41        52   2533015   2260845
+   2405484   2389115         1         0         0         0]
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: elementwise comparison failed; this will raise an error in the future.
+  if state == np.array([]):
+/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py:453: UserWarning: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 473, in check_env
+    _check_returned_values(env, observation_space, action_space)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 300, in _check_returned_values
+    _check_obs(obs, observation_space, "reset")
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 214, in _check_obs
+    assert observation_space.shape == obs.shape, (
+AssertionError: The observation returned by the `reset()` method does not match the shape of the given observation space Box(0.0, 20.0, (1,), float32). Expected: (1,), actual shape: (20,)
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(7m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                              ⏎ ✹
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 163, in <module>
+    env = UAVEnv()
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 48, in __init__
+    self.observation_space = spaces.Box(low=np.array([0.0]), high=np.array([20]), shape= 20, dtype=np.float32) #may change later when I think about the visualization
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/gymnasium/spaces/box.py", line 90, in __init__
+    assert all(
+TypeError: 'int' object is not iterable
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(8m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                              ⏎ ✹
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 163, in <module>
+    env = UAVEnv()
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 48, in __init__
+    self.observation_space = spaces.Box(low=np.array([0.0]), high=np.array([20]), shape= (20,100,100), dtype=np.float32) #may change later when I think about the visualization
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/gymnasium/spaces/box.py", line 116, in __init__
+    assert (
+AssertionError: low.shape doesn't match provided shape, low.shape: (1,), shape: (20, 100, 100)
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(22m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                              ⏎ ✹
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+[   500000         0         0 104857600        55        31        54
+        30        89        29        61        99   2356207   2422283
+   2105108   2150377         1         1         0         0]
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 163, in <module>
+    env = UAVEnv()
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 62, in __init__
+    self.observation_space = spaces.Box(low=np.zeros(len(self.state)), high=self.state, shape=(20,100,100), dtype=np.float32) #need fixing I need to make this reflect the state space. 
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/gymnasium/spaces/box.py", line 116, in __init__
+    assert (
+AssertionError: low.shape doesn't match provided shape, low.shape: (20,), shape: (20, 100, 100)
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(27m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+[   500000         0         0 104857600        12        84        98
+        35        67        40        80        41   2485118   2364125
+   2480076   2267349         0         0         0         0]
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: elementwise comparison failed; this will raise an error in the future.
+  if state == np.array([]):
+/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py:453: UserWarning: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 473, in check_env
+    _check_returned_values(env, observation_space, action_space)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 300, in _check_returned_values
+    _check_obs(obs, observation_space, "reset")
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 219, in _check_obs
+    assert np.can_cast(obs.dtype, observation_space.dtype), (
+AssertionError: The observation returned by the `reset()` method does not match the data type (cannot cast) of the given observation space Box(0.0, [5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 1.200000e+01
+ 8.400000e+01 9.800000e+01 3.500000e+01 6.700000e+01 4.000000e+01
+ 8.000000e+01 4.100000e+01 2.485118e+06 2.364125e+06 2.480076e+06
+ 2.267349e+06 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00], (20,), float32). Expected: float32, actual dtype: int64
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(27m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+[   500000         0         0 104857600         6        60         1
+        94        22        55        58        41   2137731   2244750
+   2235578   2488745         0         0         0         1]
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 163, in <module>
+    env = UAVEnv()
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 62, in __init__
+    self.observation_space = spaces.Box(low=np.zeros(self.state.size()), high=self.state, dtype=np.float32) #need fixing I need to make this reflect the state space. 
+TypeError: 'int' object is not callable
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(32m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+[   500000         0         0 104857600        76        93        44
+         9        37        33        81        35   2152133   2151126
+   2513991   2219315         1         0         1         1]
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 163, in <module>
+    env = UAVEnv()
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 62, in __init__
+    self.observation_space = spaces.Box(low=np.zeros(self.state.size(), dtype=np.float32), high=self.state, dtype=np.float32) #need fixing I need to make this reflect the state space. 
+TypeError: 'int' object is not callable
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(33m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+[   500000         0         0 104857600        18        47        46
+        33        49        47         2        53   2287460   2446402
+   2556679   2126366         0         0         0         0]
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: elementwise comparison failed; this will raise an error in the future.
+  if state == np.array([]):
+/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py:453: UserWarning: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 473, in check_env
+    _check_returned_values(env, observation_space, action_space)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 300, in _check_returned_values
+    _check_obs(obs, observation_space, "reset")
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 219, in _check_obs
+    assert np.can_cast(obs.dtype, observation_space.dtype), (
+AssertionError: The observation returned by the `reset()` method does not match the data type (cannot cast) of the given observation space Box(0.0, [5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 1.800000e+01
+ 4.700000e+01 4.600000e+01 3.300000e+01 4.900000e+01 4.700000e+01
+ 2.000000e+00 5.300000e+01 2.287460e+06 2.446402e+06 2.556679e+06
+ 2.126366e+06 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00], (20,), float32). Expected: float32, actual dtype: int64
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(35m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+[   500000         0         0 104857600        68        89        94
+        38        34         3         0        63   2586213   2304916
+   2493889   2236569         0         0         1         0]
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: elementwise comparison failed; this will raise an error in the future.
+  if state == np.array([]):
+/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py:453: UserWarning: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 473, in check_env
+    _check_returned_values(env, observation_space, action_space)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 300, in _check_returned_values
+    _check_obs(obs, observation_space, "reset")
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 219, in _check_obs
+    assert np.can_cast(obs.dtype, observation_space.dtype), (
+AssertionError: The observation returned by the `reset()` method does not match the data type (cannot cast) of the given observation space Box(0.0, [5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 6.800000e+01
+ 8.900000e+01 9.400000e+01 3.800000e+01 3.400000e+01 3.000000e+00
+ 0.000000e+00 6.300000e+01 2.586213e+06 2.304916e+06 2.493889e+06
+ 2.236569e+06 0.000000e+00 0.000000e+00 1.000000e+00 0.000000e+00], (20,), float32). Expected: float32, actual dtype: int64
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(35m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:69: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+[   500000         0         0 104857600         0        78        71
+         6        72         0         9        49   2179216   2244275
+   2437685   2419245         1         0         1         0]
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 163, in <module>
+    env = UAVEnv()
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 62, in __init__
+    self.observation_space = spaces.Box(low=np.zeros(self.state.size()), high=self.state, dtype=np.float32) #need fixing I need to make this reflect the state space. 
+TypeError: 'int' object is not callable
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(35m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:71: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+[   500000         0         0 104857600        52        61        79
+        44        97        37        95        20   2131430   2386821
+   2109912   2344764         0         0         0         0]
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 165, in <module>
+    env = UAVEnv()
+TypeError: __init__() should return None, not 'int'
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(37m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py:72: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if state == np.array([]):
+[   500000         0         0 104857600        92        24        78
+        46        69        49        32        16   2195001   2162466
+   2587520   2203782         1         1         1         1]
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 166, in <module>
+    env = UAVEnv()
+TypeError: __init__() should return None, not 'int'
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(37m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+[   500000         0         0 104857600        60        51        33
+        98        91        61        99        40   2098788   2613879
+   2562076   2449605         0         0         1         0]
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 163, in <module>
+    env = UAVEnv()
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 62, in __init__
+    self.observation_space = spaces.Box(low=np.zeros(self.state.size()), high=self.state, dtype=np.float32) #need fixing I need to make this reflect the state space. 
+TypeError: 'int' object is not callable
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(38m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+[   500000         0         0 104857600         5        92        64
+        48        42        55        74        28   2154225   2503601
+   2601456   2242525         1         1         1         1]
+/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py:453: UserWarning: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 473, in check_env
+    _check_returned_values(env, observation_space, action_space)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 300, in _check_returned_values
+    _check_obs(obs, observation_space, "reset")
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 219, in _check_obs
+    assert np.can_cast(obs.dtype, observation_space.dtype), (
+AssertionError: The observation returned by the `reset()` method does not match the data type (cannot cast) of the given observation space Box(0.0, [5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 5.000000e+00
+ 9.200000e+01 6.400000e+01 4.800000e+01 4.200000e+01 5.500000e+01
+ 7.400000e+01 2.800000e+01 2.154225e+06 2.503601e+06 2.601456e+06
+ 2.242525e+06 1.000000e+00 1.000000e+00 1.000000e+00 1.000000e+00], (20,), float32). Expected: float32, actual dtype: int64
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(40m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+[5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 1.100000e+01
+ 8.400000e+01 5.600000e+01 8.400000e+01 5.600000e+01 2.500000e+01
+ 1.100000e+01 3.000000e+01 2.531660e+06 2.205371e+06 2.280182e+06
+ 2.567318e+06 0.000000e+00 0.000000e+00 0.000000e+00 1.000000e+00]
+/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py:453: UserWarning: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 473, in check_env
+    _check_returned_values(env, observation_space, action_space)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 300, in _check_returned_values
+    _check_obs(obs, observation_space, "reset")
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 219, in _check_obs
+    assert np.can_cast(obs.dtype, observation_space.dtype), (
+AssertionError: The observation returned by the `reset()` method does not match the data type (cannot cast) of the given observation space Box(0.0, [5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 1.100000e+01
+ 8.400000e+01 5.600000e+01 8.400000e+01 5.600000e+01 2.500000e+01
+ 1.100000e+01 3.000000e+01 2.531660e+06 2.205371e+06 2.280182e+06
+ 2.567318e+06 0.000000e+00 0.000000e+00 0.000000e+00 1.000000e+00], (20,), float32). Expected: float32, actual dtype: int64
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(42m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                            ⏎ ✹ ✭
+[5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 0.000000e+00
+ 3.600000e+01 9.200000e+01 3.800000e+01 6.000000e+00 9.100000e+01
+ 5.000000e+00 6.100000e+01 2.180550e+06 2.254675e+06 2.553140e+06
+ 2.611925e+06 0.000000e+00 0.000000e+00 1.000000e+00 0.000000e+00]
+/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py:453: UserWarning: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 473, in check_env
+    _check_returned_values(env, observation_space, action_space)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 300, in _check_returned_values
+    _check_obs(obs, observation_space, "reset")
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 219, in _check_obs
+    assert np.can_cast(obs.dtype, observation_space.dtype), (
+AssertionError: The observation returned by the `reset()` method does not match the data type (cannot cast) of the given observation space Box(0.0, [5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 0.000000e+00
+ 3.600000e+01 9.200000e+01 3.800000e+01 6.000000e+00 9.100000e+01
+ 5.000000e+00 6.100000e+01 2.180550e+06 2.254675e+06 2.553140e+06
+ 2.611925e+06 0.000000e+00 0.000000e+00 1.000000e+00 0.000000e+00], (20,), float32). Expected: float32, actual dtype: int64
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(46m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                                                                            ⏎ ✹ ✭
+[5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 8.400000e+01
+ 7.000000e+01 3.200000e+01 5.400000e+01 2.300000e+01 9.100000e+01
+ 1.800000e+01 8.500000e+01 2.280418e+06 2.481733e+06 2.569869e+06
+ 2.359246e+06 0.000000e+00 1.000000e+00 1.000000e+00 1.000000e+00]
+/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py:453: UserWarning: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 473, in check_env
+    _check_returned_values(env, observation_space, action_space)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 300, in _check_returned_values
+    _check_obs(obs, observation_space, "reset")
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 219, in _check_obs
+    assert np.can_cast(obs.dtype, observation_space.dtype), (
+AssertionError: The observation returned by the `reset()` method does not match the data type (cannot cast) of the given observation space Box(0.0, [5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 8.400000e+01
+ 7.000000e+01 3.200000e+01 5.400000e+01 2.300000e+01 9.100000e+01
+ 1.800000e+01 8.500000e+01 2.280418e+06 2.481733e+06 2.569869e+06
+ 2.359246e+06 0.000000e+00 1.000000e+00 1.000000e+00 1.000000e+00], (20,), float32). Expected: float32, actual dtype: int64
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(46m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                                                                            ⏎ ✹ ✭
+[5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 6.700000e+01
+ 9.500000e+01 5.000000e+00 2.000000e+00 3.800000e+01 1.100000e+01
+ 1.500000e+01 1.900000e+01 2.578237e+06 2.343849e+06 2.487898e+06
+ 2.128918e+06 0.000000e+00 0.000000e+00 1.000000e+00 1.000000e+00]
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 426, in check_env
+    _check_spaces(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 360, in _check_spaces
+    assert hasattr(env, "observation_space"), f"You must specify an observation space ({gym_spaces})"
+AssertionError: You must specify an observation space (cf. https://gymnasium.farama.org/api/spaces/)
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(47m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                                                                            ⏎ ✹ ✭
+[   500000         0         0 104857600        24         8        36
+        28         7        92        81        10   2384589   2127280
+   2231613   2444123         0         0         1         1]
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 426, in check_env
+    _check_spaces(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 360, in _check_spaces
+    assert hasattr(env, "observation_space"), f"You must specify an observation space ({gym_spaces})"
+AssertionError: You must specify an observation space (cf. https://gymnasium.farama.org/api/spaces/)
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(47m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                                                                            ⏎ ✹ ✭
+[   500000         0         0 104857600        82        39        36
+        90        81        91        29        48   2445325   2508910
+   2512824   2255606         1         0         1         1]
+/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py:453: UserWarning: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 164, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 473, in check_env
+    _check_returned_values(env, observation_space, action_space)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 300, in _check_returned_values
+    _check_obs(obs, observation_space, "reset")
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 219, in _check_obs
+    assert np.can_cast(obs.dtype, observation_space.dtype), (
+AssertionError: The observation returned by the `reset()` method does not match the data type (cannot cast) of the given observation space Box(0.0, [5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 8.200000e+01
+ 3.900000e+01 3.600000e+01 9.000000e+01 8.100000e+01 9.100000e+01
+ 2.900000e+01 4.800000e+01 2.445325e+06 2.508910e+06 2.512824e+06
+ 2.255606e+06 1.000000e+00 0.000000e+00 1.000000e+00 1.000000e+00], (20,), float32). Expected: float32, actual dtype: int64
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(48m|git@main!)
+1041 ± /Users/jamestribble/anaconda3/envs/rlenv7/bin/python /Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py                                                                                            ⏎ ✹ ✭
+[   500000         0         0 104857600        58        95        75
+        55        54        63        13        59   2244351   2566301
+   2459823   2121626         1         1         0         1]
+[   500000         0         0 104857600        19        34        95
+        55        48         0        65        85   2141594   2579548
+   2503597   2220999         1         1         1         1]
+/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py:453: UserWarning: We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html
+  warnings.warn(
+[   500000         0         0 104857600        60        40        77
+        43        97        16        61        52   2569484   2106881
+   2565117   2240586         0         1         0         0]
+Traceback (most recent call last):
+  File "/Users/jamestribble/Documents/repos/Nimbus-REU-2024/UAV_env_custom.py", line 165, in <module>
+    check_env(env)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 473, in check_env
+    _check_returned_values(env, observation_space, action_space)
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 300, in _check_returned_values
+    _check_obs(obs, observation_space, "reset")
+  File "/Users/jamestribble/anaconda3/envs/rlenv7/lib/python3.8/site-packages/stable_baselines3/common/env_checker.py", line 219, in _check_obs
+    assert np.can_cast(obs.dtype, observation_space.dtype), (
+AssertionError: The observation returned by the `reset()` method does not match the data type (cannot cast) of the given observation space Box(0.0, [5.000000e+05 0.000000e+00 0.000000e+00 1.048576e+08 5.800000e+01
+ 9.500000e+01 7.500000e+01 5.500000e+01 5.400000e+01 6.300000e+01
+ 1.300000e+01 5.900000e+01 2.244351e+06 2.566301e+06 2.459823e+06
+ 2.121626e+06 1.000000e+00 1.000000e+00 0.000000e+00 1.000000e+00], (20,), float32). Expected: float32, actual dtype: int64
+(rlenv7) jamess-mbp ॐ  ~/Documents/repos/Nimbus-REU-2024:(51m|git@main!)
+1041 ±                                                                                                                                                                                                                       ⏎ ✹ ✭

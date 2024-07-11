@@ -43,9 +43,6 @@ class UAVEnv(gym.Env):
 
         #important to work with stable baselines below
         self.n_actions = 4
-
-        self.action_space = gym.spaces.box(low=np.array([0, 0, 0]), high=np.array([360, 100, self.users-1]), dtype=np.float32) #each step choose betweeen 0 and 360 degrees, 0 and 100 meters, and 0 and N user. serve N user.
-        self.observation_space = spaces.Box(low=np.array([0.0]), high=np.array([1.0]), dtype=np.float32) #may change later when I think about the visualization
         self.task_list = np.random.randint(2097153, 2621440, self.users)  # Random computing task 2~2.5Mbits -> 80
         
         #will need to think about how to alter below 3 to serve all users at once
@@ -57,16 +54,19 @@ class UAVEnv(gym.Env):
         self.state_dim = 4 + self.users * 4  # uav battery remain, uav loc, remaining sum task size, all ue loc, all ue task size, all ue block_flag
 
         #initliaze uav battery remaining, uav location, sum of task size, all ue location, all ue task size, all ue block flag
-        self.start_state = self.modify_state()
+        self.start_state = self.modify_state() # the changes I implemented have changed the output of the state. to not be float 32 7/10/2024
         self.state = self.start_state
         print(self.state)
+        self.action_space = gym.spaces.Box(low=np.array([0, 0, 0]), high=np.array([360, 100, self.users-1]), dtype=np.float32) #each step choose betweeen 0 and 360 degrees, 0 and 100 meters, and 0 and N user. serve N user.
+        
+        self.observation_space = spaces.Box(low=np.zeros(20), high=self.state, dtype=np.float32) #need fixing I need to make this reflect the state space. 
 
-    def modify_state(self, state = None):
+    def modify_state(self, state = np.array([])):
             #array looks like
             #[battery remaining, uavlocation x, uav location y, 
             # sum of task size, ue1 x, ue1 y, ue2 x, ue2 y, ...,
             # ue1 task size, ue2 task size, ..., ue1 block flag, ...]
-            if state == None:
+            if state.size > 0:
                 tempstate = np.append(self.e_battery_uav, self.uav_position)
                 tempstate = np.append(tempstate, self.sum_task_size)
                 tempstate = np.append(tempstate, np.ravel(self.loc_ue_list))
@@ -74,7 +74,7 @@ class UAVEnv(gym.Env):
                 tempstate = np.append(tempstate, self.block_flag_list)
                 return tempstate
             else:
-                state = np.append(self.e_battery_uav, self.loc_uav)
+                state = np.append(self.e_battery_uav, self.uav_position)
                 state = np.append(state, self.sum_task_size)
                 state = np.append(state, np.ravel(self.loc_ue_list))
                 state = np.append(state, self.task_list)
@@ -97,10 +97,11 @@ class UAVEnv(gym.Env):
         self.block_flag_list = np.random.randint(0,2,self.users) #determine which uavs are blocked or not in line of sight of the drone randomly.
         #update state to reflect changes
         self.state = self.modify_state(self.state)
+        print(self.state)
 
         #below commands are necessary for stable baselines 3 to work
         info = {}
-        observation = self.state = self.modify_state(self.start_state)
+        observation = self.modify_state(self.state)
         return observation, info
         #return np.array([self.uav_position]).astype(np.float32), {}
 
