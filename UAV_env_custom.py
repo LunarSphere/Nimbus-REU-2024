@@ -11,7 +11,7 @@ class UAVEnv(gym.Env):
     def __init__(self):
         super(UAVEnv, self).__init__()       
         #important values for mobile edge server 
-        self.uav_position = np.array([0, 0]) #x, y position of the UAV
+        self.uav_position = np.array([0.0, 0.0], dtype=np.float32) #x, y position of the UAV
         self.height = 100 #height of the UAV
         self.sum_task_size = 100 * 1048576
         self.bandwidth_nums = 1 
@@ -32,15 +32,15 @@ class UAVEnv(gym.Env):
         self.v_ue = 1 #ue moving speed 1m/s
         self.slot_num = int(self.T/self.delta_t) #number of time slots
         self.m_uav = 9.65 #UAV mass 9.65kg
-        self.e_battery_uav = 500000 #battery capacity 500kJ #ref: Mobile Edge Computing via a UAV-Mounted Cloudlet: Optimization of Bit Allocation and Path Planning
-        
+        self.e_battery_uav = 500000.0 #battery capacity 500kJ #ref: Mobile Edge Computing via a UAV-Mounted Cloudlet: Optimization of Bit Allocation and Path Planning
+        self.isinitial = True
         #################### ues ####################
         #important for user equipment (ue)
         self.users = 4 #number of users
-        self.block_flag_list = np.random.randint(0,2,self.users) #determine which uavs are blocked or not in line of sight of the drone randomly. 
+        self.block_flag_list = np.random.randint(0,2,self.users, dtype=np.int8) #determine which uavs are blocked or not in line of sight of the drone randomly. 
         #good for random simulation but will definetly change when we using real data. 
-        self.loc_ue_list = np.random.randint(0, 101, size=[self.users, 2])  # Position information: x is random between 0-100
-
+        self.loc_ue_list = np.ravel(np.random.uniform(0, 100, size=[self.users, 2])).astype(np.float32)  # Position information: x is random between 0-100
+        #print(self.loc_ue_list)debugging delete later
         #important to work with stable baselines below
         self.n_actions = 4
         self.task_list = np.random.randint(2097153, 2621440, self.users)  # Random computing task 2~2.5Mbits -> 80
@@ -49,37 +49,46 @@ class UAVEnv(gym.Env):
         #idea for serving multiple users remove the user selection part of the action space
         #and when calculating the latency loop through each user. 
          #will remove since I'm not using than to define my actions.
-        self.action_bound = [-1, 1]  # Corresponds to the tahn activation function
-        self.action_dim = 4  # The first digit represents the ue id of the service; the middle two digits represent the flight angle and distance; the last 1 digit represents the uninstall rate currently serving the UE
-        self.state_dim = 4 + self.users * 4  # uav battery remain, uav loc, remaining sum task size, all ue loc, all ue task size, all ue block_flag
-
+        # self.action_bound = [-1, 1]  # Corresponds to the tahn activation function
+        # self.action_dim = 4  # The first digit represents the ue id of the service; the middle two digits represent the flight angle and distance; the last 1 digit represents the uninstall rate currently serving the UE
+        # self.state_dim = 4 + self.users * 4  # uav battery remain, uav loc, remaining sum task size, all ue loc, all ue task size, all ue block_flag
+        self.state = {}
         #initliaze uav battery remaining, uav location, sum of task size, all ue location, all ue task size, all ue block flag
-        self.start_state = self.modify_state() # the changes I implemented have changed the output of the state. to not be float 32 7/10/2024
-        self.state = self.start_state
+        self.start_state = self.state # the changes I implemented have changed the output of the state. to not be float 32 7/10/2024
         #print(self.state) debugging delete later
         self.action_space = gym.spaces.Box(low=np.array([0, 0, 0]), high=np.array([360, 100, self.users-1]), dtype=np.float32) #each step choose betweeen 0 and 360 degrees, 0 and 100 meters, and 0 and N user. serve N user.
         
-        self.observation_space = spaces.Box(low=np.zeros(self.state_dim), high=np.inf*np.ones(self.state_dim), dtype=np.int32) #need fixing I need to make this reflect the state space. 
+        self.observation_space = spaces.Dict({
+            'battery_remaining': spaces.Box(low=0, high=self.e_battery_uav, shape=(1,), dtype=np.float32),
+            'uav_location': spaces.Box(low=0, high=100, shape=(2,), dtype=np.float32),  # Assuming normalized coordinates
+            'ue_locations': spaces.Box(low=0, high=100, shape=(2*self.users,), dtype=np.float32),
+            'ue_tasksize': spaces.Box(low=2097153, high=2621440, shape=(self.users,), dtype=np.int64),  # Assuming values range between 0 and 10
+            'ue_blocklist': spaces.MultiBinary(self.users)
+        })
 
-    def modify_state(self, state = np.array([])):
+    def modify_state(self):
+            #experimental state modification
+            self.state = {
+                'battery_remaining': np.array([self.e_battery_uav], dtype=np.float32),
+                'uav_location': self.uav_position,
+                'ue_locations': self.loc_ue_list,
+                'ue_tasksize': self.task_list,
+                'ue_blocklist': self.block_flag_list
+                }
             #array looks like
             #[battery remaining, uavlocation x, uav location y, 
             # sum of task size, ue1 x, ue1 y, ue2 x, ue2 y, ...,
             # ue1 task size, ue2 task size, ..., ue1 block flag, ...]
-            if state.size > 0:
-                tempstate = np.append(self.e_battery_uav, self.uav_position)
-                tempstate = np.append(tempstate, self.sum_task_size)
-                tempstate = np.append(tempstate, np.ravel(self.loc_ue_list))
-                tempstate = np.append(tempstate, self.task_list)
-                tempstate = np.append(tempstate, self.block_flag_list)
-                return tempstate
-            else:
-                state = np.append(self.e_battery_uav, self.uav_position)
-                state = np.append(state, self.sum_task_size)
-                state = np.append(state, np.ravel(self.loc_ue_list))
-                state = np.append(state, self.task_list)
-                state = np.append(state, self.block_flag_list)
-                return state
+            #if self.isinitial == True:
+
+                #self.isinitial = False
+            # else:
+            #     state = np.append(self.e_battery_uav, self.uav_position)
+            #     state = np.append(state, self.sum_task_size)
+            #     state = np.append(state, np.ravel(self.loc_ue_list))
+            #     state = np.append(state, self.task_list)
+            #     state = np.append(state, self.block_flag_list)
+            # return self.state
 
 
         
@@ -89,20 +98,20 @@ class UAVEnv(gym.Env):
         super().reset(seed=seed, options=options)
         #default settings for battery and other values
         self.sum_task_size = 100 * 1048576
-        self.e_battery_uav = 500000
-        self.uav_position = np.array([0, 0])
-        self.loc_ue_list = np.random.randint(0, 101, size=[self.users, 2])
+        self.e_battery_uav = 500000.0
+        self.uav_position = np.array([0.0, 0.0], dtype=np.float32)
+        self.loc_ue_list = np.ravel(np.random.uniform(0, 100, size=[self.users, 2])).astype(np.float32)  # Position information: x is random between 0-100
         #where reset step would be
         self.task_list = np.random.randint(2097153, 2621440, self.users)  # Random computing task 2~2.5Mbits -> 80
-        self.block_flag_list = np.random.randint(0,2,self.users) #determine which uavs are blocked or not in line of sight of the drone randomly.
+        self.block_flag_list = np.random.randint(0,2,self.users,dtype=np.int8) #determine which uavs are blocked or not in line of sight of the drone randomly.
         #update state to reflect changes
-        self.modify_state(self.state)
+        self.modify_state()
         #print(self.state) debugging delete later 
 
         #below commands are necessary for stable baselines 3 to work
         info = {}
-        self.modify_state(self.state)
-        observation = self.start_state #self.modify_state(self.state)
+        self.modify_state()
+        observation = self.state #self.modify_state(self.state)
         #print(observation) debugging delete later
         return (observation, info)
         #return np.array([self.uav_position]).astype(np.float32), {}
@@ -164,7 +173,7 @@ class UAVEnv(gym.Env):
 
 if __name__ == "__main__":
     env = UAVEnv()
-    obs, _ = env.reset()
+    #obs, _ = env.reset()
     #print(obs)
     check_env(env)
     
