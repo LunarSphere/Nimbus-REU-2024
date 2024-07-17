@@ -10,18 +10,18 @@ class UAVEnv(gym.Env):
     
     def __init__(self):
         super(UAVEnv, self).__init__()       
-        #important values for mobile edge server 
-        self.uav_position = np.array([0.0, 0.0], dtype=np.float32) #x, y position of the UAV
+        #################### uav ####################
+        self.uav_position = np.array([0, 0], dtype=np.float32) #x, y position of the UAV
         self.height = 100 #height of the UAV
         self.area = 100 #axa area so this is legnth and width of the area
         self.sum_task_size = 100 * 1048576
         self.bandwidth_nums = 1 
-        self.Bandwidth = self.bandwidth_nums * 10 * 6 #Bandwidth 1MHz
+        self.Bandwidth = self.bandwidth_nums * 10 ** 6 #Bandwidth 1MHz
         self.p_noisy_los = 10 ** (-13)  #Noise power of LOS channel - 100dBm
         self.p_noisy_nlos = 10 ** (-11)  #Noise power of NLOS channel - 80dBm
         self.flight_speed = 50  #UAV flight speed 50m/s
-        self.f_uav = 1.2e9  #UAV edge server frequency = 1.2GHz
-        self.f_ue = 2.e8 #User equipment frequency = .6GHz
+        self.f_uav = 1.2e9  #UAV edge server frequency = 1.2GHz #uav try 28ghz
+        self.f_ue = 2e8 #User equipment frequency = .6GHz #ask dr.nie about a good user frequency.
         self.r = 10 ** (-27) # Influence factors of chip structure on CPU processing
         self.s = 1000 #number of CPU cycles requried for unit bit processing is 1000
         self.p_uplink = 0.1  #Uplink transmission power 0.1W
@@ -35,28 +35,21 @@ class UAVEnv(gym.Env):
         self.m_uav = 9.65 #UAV mass 9.65kg
         self.e_battery_uav = 500000.0 #battery capacity 500kJ #ref: Mobile Edge Computing via a UAV-Mounted Cloudlet: Optimization of Bit Allocation and Path Planning
         self.isinitial = True
+        self.step_count = 0
+        self.episode_count = 0
         #################### ues ####################
         #important for user equipment (ue)
         self.users = 4 #number of users
         self.block_flag_list = np.random.randint(0,2,self.users, dtype=np.int8) #determine which uavs are blocked or not in line of sight of the drone randomly. 
         #good for random simulation but will definetly change when we using real data. 
         self.loc_ue_list = np.ravel(np.random.uniform(0, 100, size=[self.users, 2])).astype(np.float32)  # Position information: x is random between 0-100
-        #print(self.loc_ue_list)debugging delete later
+        #################### tasks and stable baselines ####################
         #important to work with stable baselines below
         self.n_actions = 4
         self.task_list = np.random.randint(2097153, 2621440, self.users)  # Random computing task 2~2.5Mbits -> 80
-        
-        #will need to think about how to alter below 3 to serve all users at once
-        #idea for serving multiple users remove the user selection part of the action space
-        #and when calculating the latency loop through each user. 
-         #will remove since I'm not using than to define my actions.
-        # self.action_bound = [-1, 1]  # Corresponds to the tahn activation function
-        # self.action_dim = 4  # The first digit represents the ue id of the service; the middle two digits represent the flight angle and distance; the last 1 digit represents the uninstall rate currently serving the UE
-        # self.state_dim = 4 + self.users * 4  # uav battery remain, uav loc, remaining sum task size, all ue loc, all ue task size, all ue block_flag
         self.state = {}
         #initliaze uav battery remaining, uav location, sum of task size, all ue location, all ue task size, all ue block flag
         self.start_state = self.state # the changes I implemented have changed the output of the state. to not be float 32 7/10/2024
-        #print(self.state) debugging delete later
         #decided to change action space to normalize values between -1 and 1 and have a tuple with discrete number of users. 
         self.action_space = spaces.Box(low=-1, high=1, shape=(5,), dtype=np.float32)
         
@@ -77,46 +70,27 @@ class UAVEnv(gym.Env):
                 'ue_tasksize': self.task_list,
                 'ue_blocklist': self.block_flag_list
                 }
-            #array looks like
-            #[battery remaining, uavlocation x, uav location y, 
-            # sum of task size, ue1 x, ue1 y, ue2 x, ue2 y, ...,
-            # ue1 task size, ue2 task size, ..., ue1 block flag, ...]
-            #if self.isinitial == True:
-
-                #self.isinitial = False
-            # else:
-            #     state = np.append(self.e_battery_uav, self.uav_position)
-            #     state = np.append(state, self.sum_task_size)
-            #     state = np.append(state, np.ravel(self.loc_ue_list))
-            #     state = np.append(state, self.task_list)
-            #     state = np.append(state, self.block_flag_list)
-            # return self.state
-
-
-        
-        #reset is finished in theory; possible fault point is the modify_state method and not splitting into multiple methods 
-        #as shown in the sample code. 7/10/2024
+            
+    #reset environment for next episode
     def reset(self, seed = None, options = None):
         super().reset(seed=seed, options=options)
         #default settings for battery and other values
+        self.step_count = 0
         self.sum_task_size = 100 * 1048576
         self.e_battery_uav = 500000.0
-        self.uav_position = np.array([0.0, 0.0], dtype=np.float32)
+        self.uav_position = np.array([0, 0], dtype=np.float32)
         self.loc_ue_list = np.ravel(np.random.uniform(0, 100, size=[self.users, 2])).astype(np.float32)  # Position information: x is random between 0-100
         #where reset step would be
         self.task_list = np.random.randint(2097153, 2621440, self.users)  # Random computing task 2~2.5Mbits -> 80
         self.block_flag_list = np.random.randint(0,2,self.users,dtype=np.int8) #determine which uavs are blocked or not in line of sight of the drone randomly.
         #update state to reflect changes
         self.modify_state()
-        #print(self.state) debugging delete later 
 
         #below commands are necessary for stable baselines 3 to work
         info = {}
         self.modify_state()
-        observation = self.state #self.modify_state(self.state)
-        #print(observation) debugging delete later
-        return (observation, info)
-        #return np.array([self.uav_position]).astype(np.float32), {}
+        observation = self.state 
+        return observation, info
 
 
 
@@ -127,10 +101,9 @@ class UAVEnv(gym.Env):
     #should spend some time thinking about novelty. 
     def step(self,action):
         step_redo = False
-        terminated = False
+        terminated = False #episode ends
         offloading_ratio_change = False
         reset_dist = False
-
         # get values from the action
         angle = action[0]
         flight_distance = action[1]
@@ -166,7 +139,19 @@ class UAVEnv(gym.Env):
         if self.sum_task_size == 0:
             terminated = True
             reward = 0
-        elif self.sum_task_size - self.task_list[user_selection] < 0:
+        elif self.step_count == self.slot_num:
+            terminated = True
+            truncated = True
+            ue_coords = [self.loc_ue_list[user_selection*2], self.loc_ue_list[(user_selection*2)+1]]
+            delay = self.com_delay(ue_coords, self.uav_position, offloading_ratio, task_size, block_flag)
+            reward = -self.sum_task_size - delay
+            
+            filename = 'output.txt'
+            if open(filename, 'a'):
+                with open(filename, 'a') as file_obj:
+                    file_obj.write("\n\nEpisode-" + '{:d}'.format(self.episode_count)+ 'COMPLETED')
+            self.episode_count += 1
+        elif self.sum_task_size - self.task_list[user_selection] < 0: #currently this function is not working as expected becuase step redo cannot be implemented
             self.task_list = np.ones(self.users) * self.sum_task_size
             reward = 0
             step_redo = True
@@ -196,9 +181,11 @@ class UAVEnv(gym.Env):
             self.uav_position[1] = loc_uav_post_y
             self.reset2(delay, loc_uav_post_x, loc_uav_post_y, offloading_ratio, task_size, user_selection)
         #below is necessary for the environment to work with stable baselines 3 but I will need to change it later
-        reward = 1 if self.uav_position[0] == 0 else 0
-        
+        self.episode_total_reward += reward
+        self.episode_total_latency += delay
+        self.step_count += 1  
         truncated = False #means step ended due to a time limit
+        self.modify_state()
         observation = self.state
         info = {"redo_step": step_redo, "reset_dist": reset_dist, "offloading_ratio_change": offloading_ratio_change}
         return (observation, reward, terminated, truncated, info)
@@ -216,7 +203,6 @@ class UAVEnv(gym.Env):
      
       #Reset ue task size, remaining total task size, ue position, and record to file
     def reset2(self, delay, x, y, offloading_ratio, task_size, user_selection):
-        #ue_coords = [self.loc_ue_list[user_selection*2], self.loc_ue_list[(user_selection*2)+1]]
         self.sum_task_size -= self.task_list[user_selection]  # Remaining tasks
         for i in range(self.users):  #ue position after random movement
             tmp = np.random.rand(2)
@@ -225,13 +211,12 @@ class UAVEnv(gym.Env):
             self.loc_ue_list[user_selection*2] = self.loc_ue_list[user_selection*2] + math.cos(theta_ue) * dis_ue
             self.loc_ue_list[(user_selection*2)+1] = self.loc_ue_list[(user_selection*2)+1] + math.sin(theta_ue) * dis_ue
             self.loc_ue_list[i] = np.clip(self.loc_ue_list[i], 0, self.area)
-        #self.reset_step()  # ue random computing task 1~2Mbits # 4 ue, ue occlusion situation
+        # ue random computing task 1~2Mbits # 4 ue, ue occlusion situation
         #where reset step would be
         self.task_list = np.random.randint(2097153, 2621440, self.users)  # Random computing task 2~2.5Mbits -> 80
         self.block_flag_list = np.random.randint(0,2,self.users,dtype=np.int8) #determine which uavs are blocked or not in line of sight of the drone randomly.
         # Record UE expenses
         file_name = 'output.txt'
-        # file_name = 'output_ddpg_' + str(self.bandwidth_nums) + 'MHz.txt'
         with open(file_name, 'a') as file_obj:
             file_obj.write("\nUE-" + '{:d}'.format(user_selection) + ", task size: " + '{:d}'.format(int(task_size)) + ", offloading ratio:" + '{:.2f}'.format(offloading_ratio))
             file_obj.write("\ndelay:" + '{:.2f}'.format(delay))
@@ -241,8 +226,6 @@ class UAVEnv(gym.Env):
     # Calculate cost
     #loc_uav == to uav_position and loc_ue == to ue_position
     def com_delay(self, loc_ue, loc_uav, offloading_ratio, task_size, block_flag):
-        #print(loc_uav)
-        #print (loc_ue) #debugging uav position is just a single value
         dx = loc_uav[0] - loc_ue[0]
         dy = loc_uav[1] - loc_ue[1]
         dh = self.height
@@ -258,10 +241,7 @@ class UAVEnv(gym.Env):
         if t_tr < 0 or t_edge_com < 0 or t_local_com < 0:
             raise Exception(print("+++++++++++++++++!! error !!+++++++++++++++++++++++"))
         return max([t_tr + t_edge_com, t_local_com])  #Flight time impact factor
-
 if __name__ == "__main__":
     env = UAVEnv()
-    #obs, _ = env.reset()
-    #print(obs)
     check_env(env)
     

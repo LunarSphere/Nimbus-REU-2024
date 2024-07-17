@@ -1,0 +1,57 @@
+import gym
+from gym.spaces import Box
+import numpy as np
+
+class MyEnv(gym.Env):
+    def __init__(self, users):
+        super(MyEnv, self).__init__()
+        self.users = users
+        
+        # Original action space [0, 360] for degrees, [0, 100] for meters, [0, self.users-1] for users
+        self.original_low = np.array([0, 0, 0], dtype=np.float32)
+        self.original_high = np.array([360, 100, self.users-1], dtype=np.float32)
+        self.original_action_space = Box(low=self.original_low, high=self.original_high, dtype=np.float32)
+        
+        # Normalized action space [-1, 1] for each dimension
+        self.action_space = Box(low=-1, high=1, shape=(3,), dtype=np.float32)
+        
+        # Observation space (example, should be defined according to your specific environment)
+        self.observation_space = Box(low=-np.inf, high=np.inf, shape=(3,), dtype=np.float32)
+    
+    def normalize_action(self, action):
+        """Normalize action from original space to [-1, 1]."""
+        return 2 * ((action - self.original_low) / (self.original_high - self.original_low)) - 1
+    
+    def denormalize_action(self, action):
+        """Denormalize action from [-1, 1] to original space."""
+        return self.original_low + (action + 1) / 2 * (self.original_high - self.original_low)
+    
+    def step(self, action):
+        # Rescale action from [-1, 1] to original action space
+        rescaled_action = self.denormalize_action(action)
+        
+        # Apply the rescaled action to your environment
+        # state, reward, done, info = your_environment_step(rescaled_action)
+        # For demonstration purposes, we'll use placeholders
+        state = np.zeros(3)
+        reward = 0
+        done = False
+        info = {}
+        return state, reward, done, info
+    
+    def reset(self):
+        # Reset your environment
+        # For demonstration purposes, we'll use a placeholder
+        return np.zeros(3)
+
+# Example usage
+users = 10
+env = MyEnv(users=users)
+
+# Example of taking a step
+action = np.array([0.5, -0.5, 0.0])  # Normalized action in the range [-1, 1]
+state, reward, done, info = env.step(action)
+print("State:", state)
+print("Reward:", reward)
+print("Done:", done)
+print("Info:", info)
