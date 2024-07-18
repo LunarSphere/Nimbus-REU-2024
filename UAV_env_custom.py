@@ -136,14 +136,56 @@ class UAVEnv(gym.Env):
         #calculate post flight position of uav
         dx_uav = dis_fly * math.cos(angle)
         dy_uav = dis_fly * math.sin(angle)
-        loc_uav_post_x = self.uav_position[0] + dx_uav
-        loc_uav_post_y = self.uav_position[1] + dy_uav
+        loc_uav_post_x = np.clip(self.uav_position[0] + dx_uav, 0, self.area)
+        loc_uav_post_y = np.clip(self.uav_position[1] + dy_uav, 0, self.area)
+        
         
         #calculate server computing energy consumption
         t_server = offloading_ratio * task_size / (self.f_uav / self.s) 
         e_server = self.r * self.s ** 3 * t_server
 
-        #logic to determine how step progresses. 
+        #going to overhaul the bottom logic to be two functions 
+        #battery - ignore energy consumption for now
+        #clip the distance to not exceed bounds
+        #fix sum task size by ensuring each user matches  
+        #the purpose of this simplification is becuase i can't use features like reset and redo step in stable baselines 3
+        # so this should be a good way to simplify the logic.
+        # I do need to think of a good way to manage the battery however
+        # I think i may implement if battery runs out terminate episode and return -100
+        if self.sum_task_size == 0: 
+            terminated = True
+            reward = 0
+        else:
+            ue_coords = [self.loc_ue_list[user_selection*2], self.loc_ue_list[(user_selection*2)+1]]
+            delay = self.com_delay(ue_coords, self.uav_position, offloading_ratio, task_size, block_flag)
+            reward = -delay
+            # Update status at next moment
+            #self.e_battery_uav = self.e_battery_uav - e_fly - e_server  # uav remaining power
+            self.uav_position[0] = loc_uav_post_x
+            self.uav_position[1] = loc_uav_post_y
+            if self.sum_task_size - self.task_list[user_selection] < 0:
+                self.task_list = np.ones(self.users) * self.sum_task_size
+            
+            self.reset2(delay, loc_uav_post_x, loc_uav_post_y, offloading_ratio, task_size, user_selection)
+
+        #below is necessary for the environment to work with stable baselines 3 but I will need to change it later
+        # self.episode_total_reward += reward
+        # self.episode_total_latency += delay
+        # self.step_count += 1  
+        #print(self.uav_position)
+        truncated = False #means step ended due to a time limit
+        self.modify_state()
+        observation = self.state
+        #print uav position, ue position, offloading ratio, task size, reward, terminated, truncated
+        #print("UAV position: ", self.uav_position)
+        info = {"redo_step": step_redo, "reset_dist": reset_dist, "offloading_ratio_change": offloading_ratio_change}
+        return (observation, reward, terminated, truncated, info)
+
+
+        
+
+        #logic to determine how step progresses.
+    """" 
         if self.sum_task_size == 0:
             terminated = True
             reward = 0
@@ -189,18 +231,8 @@ class UAVEnv(gym.Env):
             self.uav_position[1] = loc_uav_post_y
             
             self.reset2(delay, loc_uav_post_x, loc_uav_post_y, offloading_ratio, task_size, user_selection)
-        #below is necessary for the environment to work with stable baselines 3 but I will need to change it later
-        # self.episode_total_reward += reward
-        # self.episode_total_latency += delay
-        # self.step_count += 1  
-        print(self.uav_position)
-        truncated = False #means step ended due to a time limit
-        self.modify_state()
-        observation = self.state
-        #print uav position, ue position, offloading ratio, task size, reward, terminated, truncated
-        #print("UAV position: ", self.uav_position)
-        info = {"redo_step": step_redo, "reset_dist": reset_dist, "offloading_ratio_change": offloading_ratio_change}
-        return (observation, reward, terminated, truncated, info)
+    """
+
     
 
 

@@ -33,7 +33,7 @@ action_noise = NormalActionNoise(mean=np.zeros(n_actions), sigma=0.1 * np.ones(n
 # Create and train the DDPG model
 model = DDPG('MultiInputPolicy', vec_env, action_noise=action_noise, verbose=1)
 reward_logger = RewardLoggerCallback()
-model.learn(total_timesteps=100, callback=reward_logger)
+model.learn(total_timesteps=30000, callback=reward_logger)
 
 # Plot the rewards
 plt.plot(reward_logger.rewards)
