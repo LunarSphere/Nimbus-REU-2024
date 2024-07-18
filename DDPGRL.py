@@ -22,11 +22,6 @@ action_noise = NormalActionNoise(mean=np.zeros(n_actions), sigma=0.1 * np.ones(n
 # Create and train the DDPG model
 model = DDPG('MultiInputPolicy', vec_env, action_noise=action_noise, verbose=1)
 model.learn(total_timesteps=4000)
-ep_reward_list, ep_latency_list = env.getStats()
-print(ep_reward_list)
-plt.plot(ep_reward_list)
-plt.xlabel("Episode")
-plt.ylabel("Reward")
 
 # model.save("ddpg_uav")
 # del model
