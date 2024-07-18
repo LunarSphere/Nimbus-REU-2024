@@ -1,5 +1,7 @@
 import math
 import random
+import pandas as pd
+import csv
 import gymnasium as gym
 from gymnasium import spaces
 import numpy as np
@@ -104,6 +106,8 @@ class UAVEnv(gym.Env):
     #will return to top tasks tomorrow. 
     #should spend some time thinking about novelty. 
     def step(self,action):
+        #print(action)
+        #print(self.state)
         step_redo = False
         terminated = False #episode ends
         offloading_ratio_change = False
@@ -183,16 +187,18 @@ class UAVEnv(gym.Env):
             self.e_battery_uav = self.e_battery_uav - e_fly - e_server  # uav remaining power
             self.uav_position[0] = loc_uav_post_x
             self.uav_position[1] = loc_uav_post_y
+            
             self.reset2(delay, loc_uav_post_x, loc_uav_post_y, offloading_ratio, task_size, user_selection)
         #below is necessary for the environment to work with stable baselines 3 but I will need to change it later
         # self.episode_total_reward += reward
         # self.episode_total_latency += delay
         # self.step_count += 1  
+        print(self.uav_position)
         truncated = False #means step ended due to a time limit
-        #self.modify_state()
+        self.modify_state()
         observation = self.state
         #print uav position, ue position, offloading ratio, task size, reward, terminated, truncated
-        print("UAV position: ", self.uav_position)
+        #print("UAV position: ", self.uav_position)
         info = {"redo_step": step_redo, "reset_dist": reset_dist, "offloading_ratio_change": offloading_ratio_change}
         return (observation, reward, terminated, truncated, info)
     
@@ -207,7 +213,8 @@ class UAVEnv(gym.Env):
     #above this point the methods are necessary to pass the stable baselines check
      
      
-      #Reset ue task size, remaining total task size, ue position, and record to file
+    #Reset ue task size, remaining total task size, ue position, and record to file. 
+    # this function serves as a means of updating the simulation environment
     def reset2(self, delay, x, y, offloading_ratio, task_size, user_selection):
         self.sum_task_size -= self.task_list[user_selection]  # Remaining tasks
         for i in range(self.users):  #ue position after random movement
@@ -224,13 +231,25 @@ class UAVEnv(gym.Env):
         self.task_list = np.random.randint(2097153, 2621440, self.users)  # Random computing task 2~2.5Mbits -> 80
         self.block_flag_list = np.random.randint(0,2,self.users,dtype=np.int8) #determine which uavs are blocked or not in line of sight of the drone randomly.
         # Record UE expenses
-        file_name = 'output.txt'
-        with open(file_name, 'a') as file_obj:
-            file_obj.write("\nUE-" + '{:d}'.format(user_selection) + ", task size: " + '{:d}'.format(int(task_size)) + ", offloading ratio:" + '{:.2f}'.format(offloading_ratio))
-            file_obj.write("\ndelay:" + '{:.2f}'.format(delay))
-            file_obj.write("\nUAV hover loc:" + "[" + '{:.2f}'.format(x) + ', ' + '{:.2f}'.format(y) + ']')  # Output retains two digits of the result
+        file_name = 'output.csv'
+        with open(file_name, 'a', newline='') as file_obj:
+            csv_writer = csv.writer(file_obj)
 
-           
+            # Write the header only if the file is empty
+            file_obj.seek(0, 2)  # Move the cursor to the end of the file
+            if file_obj.tell() == 0:
+                csv_writer.writerow(["User Selection", "Task Size", "Offloading Ratio", "Delay", "UAV Hover Location X", "UAV Hover Location Y"])
+            
+            # Write the data
+            csv_writer.writerow([
+                user_selection,
+                int(task_size),
+                '{:.2f}'.format(offloading_ratio),
+                '{:.2f}'.format(delay),
+                '{:.2f}'.format(x),
+                '{:.2f}'.format(y)
+            ])
+            
     # Calculate cost
     #loc_uav == to uav_position and loc_ue == to ue_position
     def com_delay(self, loc_ue, loc_uav, offloading_ratio, task_size, block_flag):

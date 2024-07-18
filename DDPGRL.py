@@ -6,7 +6,18 @@ from stable_baselines3 import DDPG
 from stable_baselines3.common.noise import NormalActionNoise, OrnsteinUhlenbeckActionNoise
 from stable_baselines3.common.env_checker import check_env
 from stable_baselines3.common.vec_env import DummyVecEnv
+from stable_baselines3.common.callbacks import BaseCallback
 import matplotlib.pyplot as plt
+
+class RewardLoggerCallback(BaseCallback):
+    def __init__(self, verbose=0):
+        super(RewardLoggerCallback, self).__init__(verbose)
+        self.rewards = []
+
+    def _on_step(self) -> bool:
+        reward = self.locals['rewards'][0]
+        self.rewards.append(reward)
+        return True
 
 # initlize the environment and verify it
 env = UAV_env.UAVEnv()
@@ -21,7 +32,15 @@ action_noise = NormalActionNoise(mean=np.zeros(n_actions), sigma=0.1 * np.ones(n
 
 # Create and train the DDPG model
 model = DDPG('MultiInputPolicy', vec_env, action_noise=action_noise, verbose=1)
-model.learn(total_timesteps=4000)
+reward_logger = RewardLoggerCallback()
+model.learn(total_timesteps=100, callback=reward_logger)
+
+# Plot the rewards
+plt.plot(reward_logger.rewards)
+plt.xlabel('Timesteps')
+plt.ylabel('Reward')
+plt.title('Rewards over Timesteps')
+plt.show()
 
 # model.save("ddpg_uav")
 # del model
