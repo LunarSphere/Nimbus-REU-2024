@@ -1,0 +1,1957 @@
+
+UE-0, task size: 2387858, offloading ratio:0.99
+delay:2.73
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2289334, offloading ratio:0.85
+delay:1.84
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2602989, offloading ratio:0.20
+delay:10.36
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2252623, offloading ratio:0.14
+delay:9.66
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2558349, offloading ratio:0.63
+delay:4.72
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2499687, offloading ratio:0.23
+delay:9.66
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2204195, offloading ratio:0.72
+delay:3.08
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2118057, offloading ratio:0.20
+delay:8.46
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2562641, offloading ratio:0.48
+delay:6.73
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2245568, offloading ratio:0.78
+delay:2.47
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2371620, offloading ratio:0.31
+delay:8.24
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2301348, offloading ratio:0.78
+delay:2.54
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2580124, offloading ratio:0.65
+delay:4.48
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2432839, offloading ratio:0.05
+delay:11.52
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2379499, offloading ratio:0.28
+delay:8.52
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2438799, offloading ratio:0.83
+delay:2.30
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2104233, offloading ratio:0.74
+delay:2.69
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2255552, offloading ratio:0.86
+delay:2.20
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2378739, offloading ratio:0.28
+delay:8.56
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2534082, offloading ratio:0.51
+delay:6.26
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2139821, offloading ratio:0.07
+delay:9.94
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2216890, offloading ratio:0.60
+delay:4.43
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2097625, offloading ratio:0.40
+delay:6.31
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2451384, offloading ratio:0.03
+delay:11.90
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2306079, offloading ratio:0.41
+delay:6.75
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2612683, offloading ratio:0.94
+delay:3.10
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2351225, offloading ratio:0.69
+delay:3.60
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2218564, offloading ratio:0.67
+delay:3.62
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2143479, offloading ratio:0.17
+delay:8.85
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2389524, offloading ratio:0.89
+delay:2.43
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2486319, offloading ratio:0.76
+delay:3.04
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2591006, offloading ratio:0.47
+delay:6.92
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2310121, offloading ratio:0.15
+delay:9.87
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2176652, offloading ratio:0.53
+delay:5.14
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2106897, offloading ratio:0.63
+delay:3.85
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2372370, offloading ratio:0.81
+delay:2.36
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2104442, offloading ratio:0.74
+delay:2.75
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2499912, offloading ratio:0.51
+delay:6.18
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2548857, offloading ratio:0.87
+delay:2.09
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2605446, offloading ratio:0.93
+delay:3.03
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2363806, offloading ratio:0.83
+delay:2.04
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2501692, offloading ratio:0.17
+delay:10.39
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2577598, offloading ratio:0.99
+delay:2.39
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2516766, offloading ratio:0.88
+delay:2.09
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2149678, offloading ratio:0.73
+delay:2.93
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2317364, offloading ratio:0.40
+delay:6.96
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2272234, offloading ratio:0.99
+delay:2.55
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2399791, offloading ratio:0.09
+delay:10.98
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2186709, offloading ratio:0.26
+delay:8.11
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2285049, offloading ratio:0.45
+delay:6.23
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2431491, offloading ratio:0.40
+delay:7.29
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2375026, offloading ratio:0.14
+delay:10.23
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2525116, offloading ratio:0.09
+delay:11.51
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2377267, offloading ratio:0.55
+delay:5.34
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2365823, offloading ratio:0.35
+delay:7.73
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2618951, offloading ratio:0.26
+delay:9.69
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2369913, offloading ratio:0.22
+delay:9.20
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2383013, offloading ratio:0.70
+delay:3.62
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2535134, offloading ratio:0.62
+delay:4.85
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2117381, offloading ratio:0.46
+delay:5.67
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2530715, offloading ratio:0.42
+delay:7.40
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2201012, offloading ratio:0.04
+delay:10.59
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2402521, offloading ratio:0.66
+delay:4.07
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2367414, offloading ratio:0.97
+delay:2.62
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2567781, offloading ratio:0.27
+delay:9.39
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2398713, offloading ratio:0.04
+delay:11.55
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2533420, offloading ratio:0.78
+delay:2.76
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2549721, offloading ratio:0.64
+delay:4.57
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2217136, offloading ratio:0.74
+delay:2.88
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2368324, offloading ratio:0.88
+delay:1.95
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2138924, offloading ratio:0.19
+delay:8.68
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2363034, offloading ratio:0.35
+delay:7.73
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2530972, offloading ratio:0.00
+delay:12.61
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2453320, offloading ratio:0.42
+delay:7.17
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2173272, offloading ratio:0.33
+delay:7.26
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2189816, offloading ratio:0.39
+delay:6.67
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2119339, offloading ratio:0.66
+delay:3.60
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2458758, offloading ratio:0.41
+delay:7.31
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2198242, offloading ratio:0.45
+delay:6.07
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2181980, offloading ratio:0.99
+delay:2.03
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2173958, offloading ratio:0.90
+delay:2.35
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2351318, offloading ratio:0.86
+delay:1.89
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2361579, offloading ratio:0.38
+delay:7.33
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2270347, offloading ratio:0.68
+delay:3.64
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2102704, offloading ratio:0.28
+delay:7.54
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2376475, offloading ratio:0.75
+delay:3.00
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2336136, offloading ratio:0.37
+delay:7.39
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2384232, offloading ratio:0.23
+delay:9.15
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2155266, offloading ratio:0.39
+delay:6.57
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2389739, offloading ratio:0.33
+delay:8.04
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2485873, offloading ratio:0.16
+delay:10.45
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2379466, offloading ratio:0.66
+delay:4.05
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2213835, offloading ratio:0.14
+delay:9.55
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2155344, offloading ratio:0.73
+delay:2.87
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2175589, offloading ratio:0.04
+delay:10.45
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2426303, offloading ratio:0.09
+delay:11.10
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2272065, offloading ratio:0.90
+delay:1.94
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2326232, offloading ratio:0.19
+delay:9.37
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2477026, offloading ratio:0.78
+delay:2.75
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2532123, offloading ratio:0.44
+delay:7.07
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2309256, offloading ratio:0.04
+delay:11.03
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2567790, offloading ratio:0.11
+delay:11.45
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2228131, offloading ratio:0.49
+delay:5.68
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2535473, offloading ratio:0.11
+delay:11.32
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2123127, offloading ratio:0.35
+delay:6.92
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2230365, offloading ratio:0.73
+delay:3.00
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2596384, offloading ratio:0.61
+delay:5.04
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2415486, offloading ratio:0.62
+delay:4.63
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2137025, offloading ratio:0.61
+delay:4.17
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2253448, offloading ratio:0.39
+delay:6.90
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2584531, offloading ratio:0.22
+delay:10.06
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2097926, offloading ratio:0.50
+delay:5.26
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2602642, offloading ratio:0.42
+delay:7.51
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2443985, offloading ratio:0.66
+delay:4.16
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2591430, offloading ratio:0.98
+delay:2.39
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2375958, offloading ratio:0.32
+delay:8.10
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2270436, offloading ratio:0.62
+delay:4.32
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2365174, offloading ratio:0.08
+delay:10.83
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2277602, offloading ratio:0.33
+delay:7.68
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2461488, offloading ratio:0.93
+delay:2.72
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2426959, offloading ratio:0.48
+delay:6.32
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2468791, offloading ratio:0.62
+delay:4.75
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2574959, offloading ratio:0.84
+delay:2.52
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2243702, offloading ratio:0.61
+delay:4.37
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2353053, offloading ratio:0.51
+delay:5.78
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2120381, offloading ratio:0.72
+delay:2.99
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2483288, offloading ratio:0.86
+delay:2.66
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2255465, offloading ratio:0.23
+delay:8.70
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2466879, offloading ratio:0.85
+delay:1.98
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2233434, offloading ratio:0.49
+delay:5.73
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2265080, offloading ratio:0.06
+delay:10.67
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2405067, offloading ratio:0.19
+delay:9.80
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2594667, offloading ratio:0.67
+delay:4.23
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2443562, offloading ratio:0.56
+delay:5.35
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2574345, offloading ratio:0.31
+delay:8.89
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2417283, offloading ratio:0.80
+delay:2.40
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2154018, offloading ratio:0.77
+delay:2.47
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2441781, offloading ratio:0.78
+delay:2.71
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2609738, offloading ratio:0.80
+delay:2.62
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2322678, offloading ratio:0.66
+delay:3.98
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2176048, offloading ratio:0.68
+delay:3.47
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2546764, offloading ratio:1.00
+delay:2.39
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2257557, offloading ratio:0.35
+delay:7.33
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2215858, offloading ratio:0.36
+delay:7.09
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2417574, offloading ratio:0.08
+delay:11.08
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2332967, offloading ratio:0.54
+delay:5.41
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2140616, offloading ratio:0.25
+delay:8.07
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2274738, offloading ratio:0.41
+delay:6.68
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2524832, offloading ratio:0.24
+delay:9.58
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2505776, offloading ratio:0.94
+delay:2.19
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2426891, offloading ratio:0.85
+delay:1.93
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2167612, offloading ratio:0.09
+delay:9.85
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2172847, offloading ratio:0.35
+delay:7.10
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2236336, offloading ratio:0.75
+delay:2.77
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2286888, offloading ratio:0.30
+delay:7.98
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2549173, offloading ratio:0.92
+delay:2.67
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2225858, offloading ratio:0.27
+delay:8.12
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2120552, offloading ratio:0.66
+delay:3.59
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2287125, offloading ratio:0.02
+delay:11.15
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2452332, offloading ratio:0.30
+delay:8.61
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2617849, offloading ratio:0.93
+delay:2.30
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2378817, offloading ratio:0.89
+delay:1.99
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2166622, offloading ratio:0.98
+delay:2.61
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2365613, offloading ratio:0.37
+delay:7.47
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2465484, offloading ratio:0.05
+delay:11.74
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2414127, offloading ratio:0.48
+delay:6.24
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2431678, offloading ratio:0.19
+delay:9.90
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2206577, offloading ratio:0.78
+delay:2.47
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2223648, offloading ratio:0.61
+delay:4.37
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2578067, offloading ratio:0.28
+delay:9.26
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2441870, offloading ratio:0.82
+delay:2.18
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2576513, offloading ratio:0.39
+delay:7.80
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2350091, offloading ratio:0.50
+delay:5.86
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2221629, offloading ratio:0.77
+delay:2.57
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2271079, offloading ratio:0.87
+delay:1.86
+UAV hover loc:[38.85, 87.45]
+UE-2, task size: 2196209, offloading ratio:0.90
+delay:1.85
+UAV hover loc:[38.85, 87.45]
+UE-1, task size: 2323110, offloading ratio:0.32
+delay:7.85
+UAV hover loc:[38.85, 87.45]
+UE-2, task size: 2385915, offloading ratio:0.31
+delay:8.27
+UAV hover loc:[38.85, 87.45]
+UE-0, task size: 2571975, offloading ratio:0.02
+delay:12.64
+UAV hover loc:[38.85, 87.45]
+UE-2, task size: 2495067, offloading ratio:0.99
+delay:2.33
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2338063, offloading ratio:0.31
+delay:8.03
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2109490, offloading ratio:0.57
+delay:4.48
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2124505, offloading ratio:0.38
+delay:6.54
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2465347, offloading ratio:0.21
+delay:9.70
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2312237, offloading ratio:0.05
+delay:11.03
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2463302, offloading ratio:0.03
+delay:11.98
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2274218, offloading ratio:0.93
+delay:2.00
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2204806, offloading ratio:0.76
+delay:2.65
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2214437, offloading ratio:0.03
+delay:10.74
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2227230, offloading ratio:0.08
+delay:10.27
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2575891, offloading ratio:0.64
+delay:4.60
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2481919, offloading ratio:0.69
+delay:3.85
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2153818, offloading ratio:0.92
+delay:2.24
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2338075, offloading ratio:0.15
+delay:9.94
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2347469, offloading ratio:0.34
+delay:7.72
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2307175, offloading ratio:0.15
+delay:9.84
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2350960, offloading ratio:0.61
+delay:4.56
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2492314, offloading ratio:0.56
+delay:5.43
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2335938, offloading ratio:0.36
+delay:7.47
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2162502, offloading ratio:0.19
+delay:8.75
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2186449, offloading ratio:0.29
+delay:7.78
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2469086, offloading ratio:0.03
+delay:11.98
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2414227, offloading ratio:0.86
+delay:1.96
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2564549, offloading ratio:0.98
+delay:2.36
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2140276, offloading ratio:0.78
+delay:2.31
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2606670, offloading ratio:0.74
+delay:3.34
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2348132, offloading ratio:0.09
+delay:10.73
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2401128, offloading ratio:0.54
+delay:5.49
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2279637, offloading ratio:0.62
+delay:4.37
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2130340, offloading ratio:0.29
+delay:7.56
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2340744, offloading ratio:0.88
+delay:2.41
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2620066, offloading ratio:0.63
+delay:4.91
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2572075, offloading ratio:0.03
+delay:12.52
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2113270, offloading ratio:0.98
+delay:2.49
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2257312, offloading ratio:0.06
+delay:10.58
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2503791, offloading ratio:0.66
+delay:4.25
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2565121, offloading ratio:0.81
+delay:2.52
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2362549, offloading ratio:0.97
+delay:2.80
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2549069, offloading ratio:0.82
+delay:2.24
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2145308, offloading ratio:0.66
+delay:3.61
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2605255, offloading ratio:0.14
+delay:11.23
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2208710, offloading ratio:0.62
+delay:4.25
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2335156, offloading ratio:0.62
+delay:4.41
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2567494, offloading ratio:0.20
+delay:10.32
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2543245, offloading ratio:0.22
+delay:9.96
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2165750, offloading ratio:0.69
+delay:3.34
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2416309, offloading ratio:0.69
+delay:3.81
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2513694, offloading ratio:0.88
+delay:2.60
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2505922, offloading ratio:0.17
+delay:10.43
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2304094, offloading ratio:0.01
+delay:11.43
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2382452, offloading ratio:0.44
+delay:6.66
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2259576, offloading ratio:0.90
+delay:1.93
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2267945, offloading ratio:0.36
+delay:7.26
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2127139, offloading ratio:0.26
+delay:7.91
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2569326, offloading ratio:0.57
+delay:5.55
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2536704, offloading ratio:0.65
+delay:4.50
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2345889, offloading ratio:0.44
+delay:6.58
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2115620, offloading ratio:0.07
+delay:9.82
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2144504, offloading ratio:0.34
+delay:7.02
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2103652, offloading ratio:0.02
+delay:10.27
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2196975, offloading ratio:0.57
+delay:4.73
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2314418, offloading ratio:0.76
+delay:2.82
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2114566, offloading ratio:0.61
+delay:4.08
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2553131, offloading ratio:0.87
+delay:2.07
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2144245, offloading ratio:0.66
+delay:3.65
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2253526, offloading ratio:0.00
+delay:11.26
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2342341, offloading ratio:0.49
+delay:5.97
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2395700, offloading ratio:0.29
+delay:8.47
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2511991, offloading ratio:0.95
+delay:2.25
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2512625, offloading ratio:0.89
+delay:2.11
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2454430, offloading ratio:0.17
+delay:10.15
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2378100, offloading ratio:0.91
+delay:2.04
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2446443, offloading ratio:0.71
+delay:3.57
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2098445, offloading ratio:0.73
+delay:2.79
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2387926, offloading ratio:0.68
+delay:3.82
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2285432, offloading ratio:0.71
+delay:3.34
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2388007, offloading ratio:0.36
+delay:7.58
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2292551, offloading ratio:0.67
+delay:3.84
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2322696, offloading ratio:0.40
+delay:7.02
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2325630, offloading ratio:0.62
+delay:4.37
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2454272, offloading ratio:0.45
+delay:6.69
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2616604, offloading ratio:0.06
+delay:12.27
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2449263, offloading ratio:0.62
+delay:4.61
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2449051, offloading ratio:0.63
+delay:4.52
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2513461, offloading ratio:0.76
+delay:2.97
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2445921, offloading ratio:0.52
+delay:5.85
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2517425, offloading ratio:0.53
+delay:5.95
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2129460, offloading ratio:0.64
+delay:3.81
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2234010, offloading ratio:0.51
+delay:5.53
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2155404, offloading ratio:0.98
+delay:2.41
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2439529, offloading ratio:0.33
+delay:8.20
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2567875, offloading ratio:0.99
+delay:2.96
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2192606, offloading ratio:0.62
+delay:4.12
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2593086, offloading ratio:0.13
+delay:11.29
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2573161, offloading ratio:0.33
+delay:8.63
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2212498, offloading ratio:0.42
+delay:6.44
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2405653, offloading ratio:0.61
+delay:4.72
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2241872, offloading ratio:0.89
+delay:1.88
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2556500, offloading ratio:0.30
+delay:8.89
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2334276, offloading ratio:0.07
+delay:10.88
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2504028, offloading ratio:1.00
+delay:2.83
+UAV hover loc:[64.17, 74.36]
+UE-2, task size: 2464607, offloading ratio:0.48
+delay:6.38
+UAV hover loc:[64.17, 74.36]
+UE-2, task size: 2612224, offloading ratio:0.40
+delay:7.88
+UAV hover loc:[64.17, 74.36]
+UE-2, task size: 2226015, offloading ratio:0.90
+delay:2.25
+UAV hover loc:[64.17, 74.36]
+UE-2, task size: 2169885, offloading ratio:0.37
+delay:6.84
+UAV hover loc:[64.17, 74.36]
+UE-0, task size: 2157732, offloading ratio:0.17
+delay:8.91
+UAV hover loc:[64.17, 74.36]
+UE-0, task size: 2525088, offloading ratio:0.18
+delay:10.40
+UAV hover loc:[64.17, 74.36]
+UE-2, task size: 2598887, offloading ratio:0.68
+delay:4.11
+UAV hover loc:[64.17, 74.36]
+UE-1, task size: 2609410, offloading ratio:0.56
+delay:5.71
+UAV hover loc:[64.17, 74.36]
+UE-0, task size: 2583762, offloading ratio:0.83
+delay:2.25
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2257971, offloading ratio:0.03
+delay:10.90
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2113506, offloading ratio:0.73
+delay:2.82
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2393077, offloading ratio:0.86
+delay:2.62
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2427201, offloading ratio:0.84
+delay:2.61
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2445695, offloading ratio:0.05
+delay:11.66
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2230711, offloading ratio:0.77
+delay:2.55
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2222890, offloading ratio:0.71
+delay:3.21
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2207133, offloading ratio:0.24
+delay:8.33
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2247319, offloading ratio:0.35
+delay:7.36
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2345726, offloading ratio:0.96
+delay:2.84
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2263632, offloading ratio:0.16
+delay:9.52
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2135462, offloading ratio:0.07
+delay:9.90
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2183647, offloading ratio:0.41
+delay:6.47
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2325406, offloading ratio:0.74
+delay:3.00
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2188272, offloading ratio:0.88
+delay:2.31
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2533863, offloading ratio:0.11
+delay:11.24
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2206727, offloading ratio:0.87
+delay:2.35
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2145225, offloading ratio:0.83
+delay:1.81
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2146819, offloading ratio:0.43
+delay:6.09
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2246867, offloading ratio:0.75
+delay:2.81
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2379118, offloading ratio:0.57
+delay:5.15
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2304835, offloading ratio:0.04
+delay:11.03
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2295989, offloading ratio:0.34
+delay:7.56
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2279612, offloading ratio:0.92
+delay:2.55
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2265165, offloading ratio:0.91
+delay:2.48
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2139517, offloading ratio:0.55
+delay:4.82
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2332767, offloading ratio:0.79
+delay:2.40
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2587183, offloading ratio:0.50
+delay:6.53
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2402232, offloading ratio:0.55
+delay:5.41
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2491352, offloading ratio:0.18
+delay:10.17
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2118515, offloading ratio:0.25
+delay:7.98
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2436737, offloading ratio:0.63
+delay:4.51
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2599801, offloading ratio:0.45
+delay:7.14
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2277225, offloading ratio:0.73
+delay:3.11
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2376032, offloading ratio:0.72
+delay:3.29
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2103304, offloading ratio:0.70
+delay:3.11
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2433348, offloading ratio:0.23
+delay:9.41
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2129323, offloading ratio:0.31
+delay:7.40
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2534942, offloading ratio:0.64
+delay:4.54
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2495547, offloading ratio:0.65
+delay:4.39
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2144255, offloading ratio:0.39
+delay:6.57
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2422014, offloading ratio:0.51
+delay:5.90
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2257290, offloading ratio:0.71
+delay:3.26
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2283215, offloading ratio:0.30
+delay:8.02
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2524069, offloading ratio:0.88
+delay:2.11
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2321197, offloading ratio:0.65
+delay:4.10
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2110426, offloading ratio:0.64
+delay:3.75
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2577209, offloading ratio:0.74
+delay:3.29
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2557886, offloading ratio:0.03
+delay:12.36
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2484427, offloading ratio:0.34
+delay:8.17
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2460617, offloading ratio:0.56
+delay:5.44
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2533244, offloading ratio:0.82
+delay:2.59
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2291431, offloading ratio:0.24
+delay:8.76
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2479030, offloading ratio:0.07
+delay:11.53
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2193783, offloading ratio:0.16
+delay:9.19
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2158594, offloading ratio:0.82
+delay:1.99
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2214143, offloading ratio:0.80
+delay:2.17
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2181374, offloading ratio:0.66
+delay:3.75
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2392576, offloading ratio:0.09
+delay:10.94
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2263198, offloading ratio:0.41
+delay:6.70
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2143246, offloading ratio:0.40
+delay:6.42
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2334847, offloading ratio:0.21
+delay:9.25
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2347233, offloading ratio:0.23
+delay:9.03
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2526413, offloading ratio:0.15
+delay:10.70
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2446049, offloading ratio:0.59
+delay:5.05
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2379437, offloading ratio:0.20
+delay:9.48
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2358601, offloading ratio:0.84
+delay:1.86
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2469050, offloading ratio:0.92
+delay:2.74
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2102134, offloading ratio:0.15
+delay:8.89
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2620111, offloading ratio:0.89
+delay:2.65
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2257821, offloading ratio:0.17
+delay:9.36
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2244226, offloading ratio:0.46
+delay:6.10
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2581653, offloading ratio:0.31
+delay:8.94
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2187319, offloading ratio:0.48
+delay:5.67
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2582910, offloading ratio:0.26
+delay:9.56
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2465953, offloading ratio:0.43
+delay:7.05
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2272107, offloading ratio:0.46
+delay:6.16
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2169907, offloading ratio:0.93
+delay:2.43
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2333857, offloading ratio:0.53
+delay:5.45
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2317965, offloading ratio:0.44
+delay:6.43
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2406878, offloading ratio:0.70
+delay:3.66
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2472604, offloading ratio:0.91
+delay:2.70
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2502666, offloading ratio:0.33
+delay:8.38
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2288345, offloading ratio:0.67
+delay:3.73
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2132776, offloading ratio:0.88
+delay:2.31
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2551349, offloading ratio:0.10
+delay:11.44
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2469329, offloading ratio:0.83
+delay:2.12
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2534504, offloading ratio:0.45
+delay:7.00
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2123950, offloading ratio:0.89
+delay:2.31
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2133370, offloading ratio:0.40
+delay:6.42
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2467094, offloading ratio:0.62
+delay:4.73
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2382679, offloading ratio:0.98
+delay:2.20
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2286465, offloading ratio:0.71
+delay:3.37
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2262766, offloading ratio:0.16
+delay:9.52
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2433710, offloading ratio:0.42
+delay:7.01
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2287201, offloading ratio:0.88
+delay:2.51
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2280309, offloading ratio:0.27
+delay:8.30
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2548589, offloading ratio:0.34
+delay:8.36
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2261994, offloading ratio:0.53
+delay:5.33
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2441329, offloading ratio:0.74
+delay:3.20
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2455491, offloading ratio:0.60
+delay:4.91
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2305990, offloading ratio:0.46
+delay:6.27
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2217376, offloading ratio:0.47
+delay:5.88
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2260071, offloading ratio:0.45
+delay:6.17
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2573403, offloading ratio:0.32
+delay:8.78
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2413129, offloading ratio:0.31
+delay:8.31
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2165506, offloading ratio:0.73
+delay:2.94
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2456013, offloading ratio:0.46
+delay:6.61
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2574105, offloading ratio:0.21
+delay:10.17
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2537593, offloading ratio:0.44
+delay:7.08
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2505928, offloading ratio:0.93
+delay:2.76
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2391618, offloading ratio:0.39
+delay:7.33
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2535577, offloading ratio:0.41
+delay:7.50
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2361135, offloading ratio:0.90
+delay:1.99
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2444645, offloading ratio:0.56
+delay:5.39
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2186042, offloading ratio:0.48
+delay:5.68
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2308472, offloading ratio:0.83
+delay:2.26
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2408347, offloading ratio:0.45
+delay:6.67
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2422693, offloading ratio:0.21
+delay:9.56
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2166755, offloading ratio:0.27
+delay:7.94
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2392143, offloading ratio:0.39
+delay:7.29
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2312294, offloading ratio:0.72
+delay:3.26
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2198291, offloading ratio:0.72
+delay:3.08
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2322945, offloading ratio:0.84
+delay:2.28
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2323332, offloading ratio:0.65
+delay:4.09
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2393130, offloading ratio:0.18
+delay:9.77
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2401849, offloading ratio:0.21
+delay:9.48
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2297917, offloading ratio:0.67
+delay:3.83
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2546163, offloading ratio:0.53
+delay:6.04
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2154171, offloading ratio:0.01
+delay:10.63
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2333316, offloading ratio:0.17
+delay:9.64
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2394994, offloading ratio:0.04
+delay:11.46
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2575638, offloading ratio:0.82
+delay:2.48
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2176799, offloading ratio:0.07
+delay:10.12
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2499476, offloading ratio:0.43
+delay:7.13
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2306002, offloading ratio:0.54
+delay:5.28
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2380295, offloading ratio:0.14
+delay:10.23
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2316750, offloading ratio:0.92
+delay:2.56
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2515048, offloading ratio:0.12
+delay:11.07
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2618298, offloading ratio:0.36
+delay:8.44
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2440771, offloading ratio:0.74
+delay:3.22
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2270945, offloading ratio:0.71
+delay:3.26
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2526518, offloading ratio:0.70
+delay:3.78
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2539980, offloading ratio:0.77
+delay:2.98
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2307410, offloading ratio:0.83
+delay:2.15
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2309321, offloading ratio:0.74
+delay:3.04
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2098433, offloading ratio:0.53
+delay:4.97
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2333964, offloading ratio:0.94
+delay:2.07
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2161141, offloading ratio:0.76
+delay:2.59
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2234583, offloading ratio:0.04
+delay:10.74
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2542833, offloading ratio:0.45
+delay:6.97
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2109852, offloading ratio:0.71
+delay:3.06
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2443321, offloading ratio:0.14
+delay:10.50
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2584670, offloading ratio:0.22
+delay:10.11
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2427697, offloading ratio:0.55
+delay:5.45
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2400182, offloading ratio:0.42
+delay:6.92
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2366549, offloading ratio:0.01
+delay:11.72
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2403218, offloading ratio:0.24
+delay:9.10
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2515547, offloading ratio:0.33
+delay:8.40
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2507352, offloading ratio:0.28
+delay:9.09
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2239824, offloading ratio:0.10
+delay:10.05
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2344051, offloading ratio:0.63
+delay:4.36
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2473014, offloading ratio:0.62
+delay:4.70
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2150947, offloading ratio:0.64
+delay:3.85
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2100069, offloading ratio:0.57
+delay:4.49
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2265538, offloading ratio:0.54
+delay:5.26
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2170541, offloading ratio:0.26
+delay:8.06
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2583595, offloading ratio:0.09
+delay:11.70
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2101242, offloading ratio:0.79
+delay:2.16
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2600339, offloading ratio:0.67
+delay:4.25
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2483187, offloading ratio:0.49
+delay:6.36
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2556777, offloading ratio:0.63
+delay:4.78
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2563307, offloading ratio:0.94
+delay:2.27
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2149252, offloading ratio:0.26
+delay:7.98
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2528510, offloading ratio:0.59
+delay:5.22
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2409588, offloading ratio:0.75
+delay:2.99
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2605939, offloading ratio:0.08
+delay:11.95
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2154092, offloading ratio:0.49
+delay:5.52
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2206979, offloading ratio:0.36
+delay:7.11
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2592625, offloading ratio:0.30
+delay:9.02
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2267164, offloading ratio:0.53
+delay:5.36
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2559113, offloading ratio:0.04
+delay:12.33
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2497600, offloading ratio:0.86
+delay:2.58
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2195310, offloading ratio:0.59
+delay:4.47
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2466577, offloading ratio:0.12
+delay:10.80
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2270772, offloading ratio:0.16
+delay:9.48
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2461708, offloading ratio:0.31
+delay:8.49
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2240402, offloading ratio:0.53
+delay:5.27
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2422075, offloading ratio:0.91
+delay:2.68
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2118953, offloading ratio:0.96
+delay:1.92
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2580097, offloading ratio:0.38
+delay:7.95
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2353624, offloading ratio:0.91
+delay:2.64
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2530894, offloading ratio:0.70
+delay:3.83
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2297973, offloading ratio:0.19
+delay:9.33
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2137028, offloading ratio:0.63
+delay:3.92
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2410104, offloading ratio:0.54
+delay:5.51
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2342376, offloading ratio:0.32
+delay:7.93
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2135303, offloading ratio:0.32
+delay:7.30
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2164343, offloading ratio:0.24
+delay:8.23
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2408285, offloading ratio:0.11
+delay:10.74
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2259341, offloading ratio:0.28
+delay:8.08
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2555859, offloading ratio:0.31
+delay:8.78
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2163905, offloading ratio:0.74
+delay:2.78
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2469389, offloading ratio:0.02
+delay:12.05
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2406995, offloading ratio:0.48
+delay:6.30
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2544762, offloading ratio:0.93
+delay:2.68
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2120132, offloading ratio:0.16
+delay:8.93
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2251206, offloading ratio:0.41
+delay:6.66
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2446485, offloading ratio:0.95
+delay:2.72
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2395551, offloading ratio:0.52
+delay:5.74
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2293609, offloading ratio:0.18
+delay:9.42
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2580960, offloading ratio:0.18
+delay:10.59
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2603386, offloading ratio:0.26
+delay:9.66
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2125836, offloading ratio:0.32
+delay:7.20
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2158592, offloading ratio:0.91
+delay:2.37
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2451641, offloading ratio:0.36
+delay:7.85
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2423878, offloading ratio:0.43
+delay:6.92
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2141094, offloading ratio:0.03
+delay:10.34
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2331874, offloading ratio:0.92
+delay:2.03
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2526641, offloading ratio:0.09
+delay:11.55
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2540270, offloading ratio:0.97
+delay:2.34
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2491736, offloading ratio:0.13
+delay:10.87
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2119348, offloading ratio:0.64
+delay:3.87
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2173321, offloading ratio:0.24
+delay:8.25
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2463783, offloading ratio:0.83
+delay:2.06
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2342350, offloading ratio:0.37
+delay:7.38
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2170021, offloading ratio:0.40
+delay:6.56
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2460381, offloading ratio:0.15
+delay:10.42
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2177446, offloading ratio:0.71
+delay:3.11
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2134986, offloading ratio:0.43
+delay:6.13
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2293386, offloading ratio:0.32
+delay:7.75
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2407154, offloading ratio:0.55
+delay:5.41
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2211629, offloading ratio:0.11
+delay:9.84
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2230591, offloading ratio:0.49
+delay:5.73
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2202533, offloading ratio:0.54
+delay:5.01
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2352294, offloading ratio:0.57
+delay:5.02
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2151587, offloading ratio:0.72
+delay:2.97
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2405294, offloading ratio:0.74
+delay:3.12
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2152784, offloading ratio:0.21
+delay:8.56
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2569982, offloading ratio:0.45
+delay:7.09
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2582457, offloading ratio:0.23
+delay:9.98
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2339672, offloading ratio:0.92
+delay:2.62
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2265432, offloading ratio:0.13
+delay:9.80
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2571124, offloading ratio:0.58
+delay:5.34
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2612816, offloading ratio:0.64
+delay:4.68
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2112701, offloading ratio:0.37
+delay:6.66
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2285728, offloading ratio:0.00
+delay:11.40
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2567157, offloading ratio:0.55
+delay:5.72
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2274924, offloading ratio:0.37
+delay:7.20
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2252377, offloading ratio:0.97
+delay:2.07
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2311826, offloading ratio:0.97
+delay:2.76
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2128347, offloading ratio:0.47
+delay:5.67
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2343759, offloading ratio:0.35
+delay:7.64
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2399155, offloading ratio:0.95
+delay:2.12
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2452571, offloading ratio:0.82
+delay:2.30
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2558113, offloading ratio:0.91
+delay:2.20
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2498542, offloading ratio:0.15
+delay:10.58
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2529919, offloading ratio:0.06
+delay:11.87
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2586904, offloading ratio:0.14
+delay:11.16
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2180000, offloading ratio:0.15
+delay:9.28
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2162189, offloading ratio:0.48
+delay:5.60
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2458740, offloading ratio:0.52
+delay:5.88
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2405122, offloading ratio:0.63
+delay:4.50
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2396949, offloading ratio:0.26
+delay:8.89
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2278076, offloading ratio:0.67
+delay:3.73
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2589777, offloading ratio:0.20
+delay:10.42
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2213114, offloading ratio:0.32
+delay:7.51
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2445245, offloading ratio:0.35
+delay:7.96
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2508348, offloading ratio:0.47
+delay:6.71
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2462463, offloading ratio:0.92
+delay:2.60
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2532277, offloading ratio:0.35
+delay:8.19
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2248990, offloading ratio:0.71
+delay:3.27
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2522329, offloading ratio:0.96
+delay:2.30
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2607553, offloading ratio:0.99
+delay:2.43
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2598601, offloading ratio:0.38
+delay:8.03
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2510648, offloading ratio:0.36
+delay:8.05
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2363328, offloading ratio:0.45
+delay:6.55
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2142804, offloading ratio:0.57
+delay:4.60
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2185933, offloading ratio:0.26
+delay:8.05
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2243371, offloading ratio:0.45
+delay:6.14
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2355171, offloading ratio:0.73
+delay:3.13
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2234207, offloading ratio:0.22
+delay:8.73
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2543606, offloading ratio:0.54
+delay:5.84
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2160028, offloading ratio:0.31
+delay:7.45
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2158192, offloading ratio:0.38
+delay:6.68
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2514212, offloading ratio:0.10
+delay:11.30
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2570561, offloading ratio:0.32
+delay:8.76
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2419855, offloading ratio:0.78
+delay:2.61
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2371091, offloading ratio:0.03
+delay:11.52
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2304771, offloading ratio:0.92
+delay:2.00
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2580095, offloading ratio:0.68
+delay:4.10
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2113476, offloading ratio:0.05
+delay:10.01
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2282956, offloading ratio:0.01
+delay:11.30
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2307463, offloading ratio:0.93
+delay:2.53
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2558420, offloading ratio:0.38
+delay:7.94
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2301310, offloading ratio:0.36
+delay:7.40
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2222357, offloading ratio:0.69
+delay:3.46
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2163888, offloading ratio:0.02
+delay:10.64
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2192220, offloading ratio:0.11
+delay:9.79
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2447115, offloading ratio:0.37
+delay:7.73
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2224289, offloading ratio:0.89
+delay:2.33
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2276218, offloading ratio:0.43
+delay:6.52
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2336629, offloading ratio:0.09
+delay:10.59
+UAV hover loc:[34.01, 2.72]
+UE-0, task size: 2297625, offloading ratio:0.50
+delay:5.70
+UAV hover loc:[34.01, 2.72]
+UE-1, task size: 2244692, offloading ratio:0.84
+delay:2.20
+UAV hover loc:[34.01, 2.72]
+UE-0, task size: 2613385, offloading ratio:0.13
+delay:11.38
+UAV hover loc:[34.01, 2.72]
+UE-0, task size: 2248329, offloading ratio:0.91
+delay:2.44
+UAV hover loc:[34.01, 2.72]
+UE-0, task size: 2351199, offloading ratio:1.00
+delay:2.19
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2517851, offloading ratio:0.74
+delay:3.29
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2502470, offloading ratio:0.19
+delay:10.10
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2439889, offloading ratio:0.18
+delay:9.97
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2599452, offloading ratio:0.09
+delay:11.77
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2472594, offloading ratio:0.01
+delay:12.29
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2325723, offloading ratio:0.09
+delay:10.52
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2161369, offloading ratio:0.82
+delay:1.95
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2157410, offloading ratio:0.73
+delay:2.94
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2417788, offloading ratio:0.62
+delay:4.65
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2289917, offloading ratio:0.26
+delay:8.48
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2208967, offloading ratio:0.09
+delay:10.08
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2330204, offloading ratio:0.36
+delay:7.49
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2569735, offloading ratio:0.76
+delay:3.06
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2327725, offloading ratio:0.96
+delay:2.66
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2590963, offloading ratio:0.80
+delay:2.54
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2129676, offloading ratio:0.57
+delay:4.53
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2466407, offloading ratio:0.85
+delay:2.53
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2311190, offloading ratio:0.12
+delay:10.20
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2467357, offloading ratio:0.01
+delay:12.21
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2341883, offloading ratio:0.51
+delay:5.72
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2136651, offloading ratio:0.39
+delay:6.55
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2373284, offloading ratio:0.61
+delay:4.67
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2334705, offloading ratio:0.69
+delay:3.61
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2281104, offloading ratio:0.69
+delay:3.58
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2254802, offloading ratio:0.07
+delay:10.54
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2294210, offloading ratio:0.53
+delay:5.36
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2577216, offloading ratio:0.28
+delay:9.27
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2492244, offloading ratio:0.63
+delay:4.64
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2264233, offloading ratio:0.14
+delay:9.73
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2300489, offloading ratio:0.96
+delay:2.08
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2407632, offloading ratio:0.75
+delay:2.95
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2239149, offloading ratio:0.46
+delay:6.08
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2367163, offloading ratio:0.59
+delay:4.84
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2153616, offloading ratio:0.42
+delay:6.22
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2107482, offloading ratio:0.02
+delay:10.37
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2324796, offloading ratio:0.86
+delay:1.88
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2400576, offloading ratio:0.57
+delay:5.12
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2493977, offloading ratio:0.43
+delay:7.10
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2512418, offloading ratio:0.94
+delay:2.77
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2385929, offloading ratio:0.21
+delay:9.37
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2516650, offloading ratio:0.40
+delay:7.58
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2309955, offloading ratio:0.73
+delay:3.17
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2318790, offloading ratio:0.78
+delay:2.55
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2594812, offloading ratio:0.42
+delay:7.53
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2497394, offloading ratio:0.76
+delay:3.03
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2260847, offloading ratio:0.29
+delay:7.99
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2148906, offloading ratio:0.57
+delay:4.64
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2584326, offloading ratio:0.24
+delay:9.81
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2532683, offloading ratio:0.78
+delay:2.72
+UAV hover loc:[0.00, 0.00]
+UE-0, task size: 2244386, offloading ratio:0.48
+delay:5.87
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2477548, offloading ratio:0.30
+delay:8.69
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2212949, offloading ratio:0.24
+delay:8.46
+UAV hover loc:[0.00, 0.00]
+UE-2, task size: 2246867, offloading ratio:0.10
+delay:10.06
+UAV hover loc:[0.00, 0.00]
+UE-1, task size: 2327303, offloading ratio:0.21
+delay:9.21
+UAV hover loc:[0.00, 0.00]

@@ -23,9 +23,15 @@ class UAVEnv(gym.Env):
         self.p_noisy_los = 10 ** (-13)  #Noise power of LOS channel - 100dBm
         self.p_noisy_nlos = 10 ** (-11)  #Noise power of NLOS channel - 80dBm
         self.sum_task_size = 100 * 1048576 #total computing tasksize 100Mbits
-        self.flight_speed = 50  #UAV flight speed 50m/s
-        self.f_uav = 1.2e9  #UAV edge server frequency = 1.2GHz #uav try 28ghz for 5g
-        self.f_ue = 2e8 #User equipment frequency = .6GHz #ask dr.nie about a good user frequency.
+        #goal is to minimize transmission delay
+        #change cpu frequency to transmission frequency
+        #compute transmission delay between uav and ue
+        # uav and user should both be 28ghz
+        # if its determined by distance over speed of light then what is role of path loss and user frequency
+        self.speed_light = 3 * 10 ** 8  #Speed of light 3*10^8m/s
+        self.flight_speed = 10  #UAV flight speed 50m/s
+        self.f_uav = 1.2e9  #UAV edge server cpu frequency = 1.2GHz #uav try 28ghz for 5g
+        self.f_ue = 2e8 #User equipment cpu frequency = .6GHz #ask dr.nie about a good user frequency.
         self.r = 10 ** (-27) # Influence factors of chip structure on CPU processing
         self.s = 1000 #number of CPU cycles requried for unit bit processing is 1000
         self.p_uplink = 0.1  #Uplink transmission power 0.1W
@@ -155,14 +161,24 @@ class UAVEnv(gym.Env):
         if self.sum_task_size == 0: 
             terminated = True
             reward = 0
+        # elif self.e_battery_uav < e_fly or self.e_battery_uav - e_fly < e_server: #if power runs out
+        #     ue_coords = [self.loc_ue_list[user_selection*2], self.loc_ue_list[(user_selection*2)+1]]
+        #     delay = self.com_delay(ue_coords, self.uav_position, 0, task_size, block_flag)
+        #     reward = -delay - 100
+        #     # Update status at next moment
+        #     self.e_battery_uav = self.e_battery_uav - e_server  # uav remaining power
+        #     if self.sum_task_size - self.task_list[user_selection] < 0:
+        #         self.task_list = np.ones(self.users) * self.sum_task_size
+        #     self.reset2(delay, self.uav_position[0], self.uav_position[1], 0, task_size, user_selection)
         else:
             ue_coords = [self.loc_ue_list[user_selection*2], self.loc_ue_list[(user_selection*2)+1]]
             delay = self.com_delay(ue_coords, self.uav_position, offloading_ratio, task_size, block_flag)
             reward = -delay
             # Update status at next moment
-            #self.e_battery_uav = self.e_battery_uav - e_fly - e_server  # uav remaining power
+            # self.e_battery_uav = self.e_battery_uav - e_fly - e_server  # uav remaining power
             self.uav_position[0] = loc_uav_post_x
             self.uav_position[1] = loc_uav_post_y
+            #countermesasures for randomly assigned task sizes
             if self.sum_task_size - self.task_list[user_selection] < 0:
                 self.task_list = np.ones(self.users) * self.sum_task_size
             
@@ -178,7 +194,7 @@ class UAVEnv(gym.Env):
         observation = self.state
         #print uav position, ue position, offloading ratio, task size, reward, terminated, truncated
         #print("UAV position: ", self.uav_position)
-        info = {"redo_step": step_redo, "reset_dist": reset_dist, "offloading_ratio_change": offloading_ratio_change}
+        info = {}
         return (observation, reward, terminated, truncated, info)
 
 
@@ -285,6 +301,17 @@ class UAVEnv(gym.Env):
     # Calculate cost
     #loc_uav == to uav_position and loc_ue == to ue_position
     def com_delay(self, loc_ue, loc_uav, offloading_ratio, task_size, block_flag):
+        #delay would be distance divided by speed of light 3*10^8 m/s
+        #calculate propagation delay
+        #don't need to consider processing delay
+        #shorter users are to uav quicker the transmission
+        # optimize trajectory
+        #
+
+        ####################Possible solution######################
+        #calculate the distance between uav and each ue
+        #get max delay from list off all user distance/transmission delays
+        #
         dx = loc_uav[0] - loc_ue[0]
         dy = loc_uav[1] - loc_ue[1]
         dh = self.height
