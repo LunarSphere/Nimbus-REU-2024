@@ -20,11 +20,11 @@ class RewardLoggerCallback(BaseCallback):
         reward = self.locals['rewards'][0]
         self.rewards.append(reward)
         self.episode_reward_count += reward
-        
+
         done = self.locals['dones'][0]
         if done:
-            self.episode_rewards.append(self.episode_reward_count)
-            self.episode_reward_count = 0
+            self.episode_rewards.append(-max(self.rewards))
+            self.rewards = []
         return True
 
 # initlize the environment and verify it
@@ -45,18 +45,20 @@ action_noise = NormalActionNoise(mean=np.zeros(n_actions), sigma=0.1 * np.ones(n
 # Create and train the DDPG model
 #model = DDPG('MultiInputPolicy', vec_env, verbose=1)
 model = TD3('MultiInputPolicy', vec_env, buffer_size=buffer_size, learning_starts=learning_starts,action_noise=action_noise, verbose=1)
+#model = DDPG('MultiInputPolicy', vec_env,action_noise=action_noise, verbose=1)
+#model = PPO('MultiInputPolicy', vec_env, verbose=1)
 reward_logger = RewardLoggerCallback()
-model.learn(total_timesteps=10000, callback=reward_logger)
+model.learn(total_timesteps=100, callback=reward_logger)
 
-# Plot the rewards
-plt.plot(reward_logger.rewards)
-plt.xlabel('Timesteps')
-plt.ylabel('Reward')
-plt.title('Rewards over Timesteps')
-plt.show()
+# # Plot the rewards
+# plt.plot(reward_logger.rewards)
+# plt.xlabel('Timesteps')
+# plt.ylabel('Reward')
+# plt.title('Rewards over Timesteps')
+# plt.show()
 
 plt.plot(reward_logger.episode_rewards)
-plt.xlabel('Eppisodes')
+plt.xlabel('Episodes')
 plt.ylabel('Reward')
 plt.title('Rewards over Episodes')
 plt.show()
